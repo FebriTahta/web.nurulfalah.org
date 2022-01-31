@@ -382,7 +382,7 @@
                 <h2>ARTIKEL</h2>
                 <a href="#">Lihat Semua</a>
             </div>
-            <div class="row">
+            {{-- <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 isotope-item latest" data-aos="fade-up" data-aos-delay="300">
                     <div class="strips">
                         <figure>
@@ -426,7 +426,7 @@
                     </div>
                 </div>
             </div>
-            
+             --}}
             {{-- customer --}}
             
         </div>

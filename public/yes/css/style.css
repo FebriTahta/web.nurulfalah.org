@@ -3715,10 +3715,7 @@ header.black_nav .dropdown.user a:hover {
   position: relative;
   margin-bottom: 30px;
 }
-.strips {
-  position: relative;
-  margin-bottom: 30px;
-}
+
 .strip figure {
   margin-bottom: 5px;
   overflow: hidden;
@@ -3731,32 +3728,8 @@ header.black_nav .dropdown.user a:hover {
   border-radius: 5px;
   background-color: #ededed;
 }
-.strips figure {
-  margin-bottom: 5px;
-  overflow: hidden;
-  position: relative;
-  max-width: 100%;
-  height: 260px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  background-color: #ededed;
-}
-@media (max-width: 500px) {
-  .strips figure {
-    margin-bottom: 5px;
-    overflow: hidden;
-    position: relative;
-    height: 210px;
-    max-width: 100%;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    border-radius: 5px;
-    background-color: #ededed;
-  }
-}
+
+
 @media (max-width: 500px) {
   .strip figure {
     margin-bottom: 5px;

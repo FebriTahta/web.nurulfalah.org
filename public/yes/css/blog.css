@@ -82,7 +82,7 @@ article.blog figure img {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   width: 100%;
-  height: auto;
+  height: 210px;
   position: absolute;
   left: 50%;
   top: 50%;

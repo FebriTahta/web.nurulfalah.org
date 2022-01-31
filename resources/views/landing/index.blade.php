@@ -56,8 +56,10 @@
             </div>
         </div>
         <!-- /page_header -->
-
+        
         <div class="container" style="margin-top: 20px">
+            
+
             <div class="main_title">
                 <h2 data-aos="fade-right" data-aos-delay="150">MENU</h2>
                 <p data-aos="fade-right" data-aos-delay="450">Bidang & Events</p>

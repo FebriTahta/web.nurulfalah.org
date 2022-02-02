@@ -839,17 +839,17 @@
 }
 
 .bidang__image img{
-  flex: 1;
+  flex: 1 !important;
   width: 50px !important;
 }
 
 .bidang__name{
-  flex: 2;
-  margin: 10px;
+  flex: 2 !important;
+  margin: 10px !important;
 }
 
 .bidang__name h5{
-  font-size: 15px;
+  font-size: 15px !important;
 }
 
 @media (min-width: 900px) {

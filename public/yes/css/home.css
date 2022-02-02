@@ -856,16 +856,19 @@
   .bidang__image img{
     width: 80px !important;
   }
+  .baris{
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 500px) {
   .bidang__name{
     display: none !important;
   }
-  .baris{
+  /* .baris{
     display: none !important;
   }
   .bidang{
     margin-top: 20px;
-  }
+  } */
 }

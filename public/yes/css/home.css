@@ -856,4 +856,7 @@
   .bidang__image img{
     width: 80px !important;
   }
+  .bidang__name{
+    display: none !important;
+  }
 }

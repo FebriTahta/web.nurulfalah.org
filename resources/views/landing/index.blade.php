@@ -162,37 +162,37 @@
                             <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">
                             {{-- <p style="margin: 5px 5px 5px 10px">DGTKI</p> --}}
                         </div>
-                        {{-- <div class="form-group bidang__name">
+                        <div class="form-group bidang__name">
                             <h5>BIDANG</h5>
                             <p>TILAWATI</p>
-                        </div> --}}
+                        </div>
                     </div>
                     <div class="col-lg-3 col-3 bidang__card" >
                         <div class="form-group bidang__image" style="margin-top: 10px">
                             <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">
                         </div>
-                        {{-- <div class="form-group bidang__name">
+                        <div class="form-group bidang__name">
                             <h5>BIDANG</h5>
                             <p>DGTKI</p>
-                        </div> --}}
+                        </div>
                     </div>
                     <div class="col-lg-3 col-3 bidang__card" >
                         <div class="form-group bidang__image" style="margin-top: 10px">
                             <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">
                         </div>
-                        {{-- <div class="form-group bidang__name">
+                        <div class="form-group bidang__name">
                             <h5>BIDANG</h5>
                             <p>TAHFIDZ</p>
-                        </div> --}}
+                        </div>
                     </div>
                     <div class="col-lg-3 col-3 bidang__card" >
                         <div class="form-group bidang__image" style="margin-top: 10px">
                             <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">
                         </div>
-                        {{-- <div class="form-group bidang__name">
+                        <div class="form-group bidang__name">
                             <h5>BIDANG</h5>
                             <p>LAZIZ</p>
-                        </div> --}}
+                        </div>
                     </div>
                 </div>
             </div>

@@ -155,6 +155,47 @@
             </div>
             <!-- /carousel -->
             <hr>
+            <div class="box_info_x" >
+                <div class="row">
+                    <div class="col-lg-3 col-6 bidang__card" >
+                        <div class="form-group bidang__image" style="margin-top: 10px">
+                            <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">
+                        </div>
+                        <div class="form-group bidang__name">
+                            <h5>BIDANG</h5>
+                            <p>TILAWATI</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 bidang__card" >
+                        <div class="form-group bidang__image" style="margin-top: 10px">
+                            <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">
+                        </div>
+                        <div class="form-group bidang__name">
+                            <h5>BIDANG</h5>
+                            <p>DGTKI</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 bidang__card" >
+                        <div class="form-group bidang__image" style="margin-top: 10px">
+                            <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">
+                        </div>
+                        <div class="form-group bidang__name">
+                            <h5>BIDANG</h5>
+                            <p>TAHFIDZ</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 bidang__card" >
+                        <div class="form-group bidang__image" style="margin-top: 10px">
+                            <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">
+                        </div>
+                        <div class="form-group bidang__name">
+                            <h5>BIDANG</h5>
+                            <p>LAZIZ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
             {{-- <div class="wave hero"></div> --}}
             <div class="box_info_1" style="margin-top: 20px">
                 <div class="row justify-content-center">
@@ -302,63 +343,7 @@
                 <a href="#">Lihat Semua</a>
             </div>
             <div class="row">
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
-                    <article class="blog">
-                        <figure>
-                            <a href="#"><img src="{{ asset('yes/img/blog-1.jpg') }}" alt="">
-                                <div class="preview"><span>Read more</span></div>
-                            </a>
-                        </figure>
-                        <div class="post_info">
-                            <small>Category - 20 Nov. 2017</small>
-                            <h2><a href="blog-post.html">JUDUL BERITA</a></h2>
-                            <p>Deskripsi singkat tentang berita yang dimuat ....</p>
-                            <ul style="text-align: center">
-                                <button class="btn btn_1" style="border-radius: 20px">Baca Selengkapnya</button>
-                            </ul>
-                        </div>
-                    </article>
-                    <!-- /article -->
-                </div>
-                <!-- /col -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="450">
-                    <article class="blog">
-                        <figure>
-                            <a href="#"><img src="{{ asset('yes/img/blog-1.jpg') }}" alt="">
-                                <div class="preview"><span>Read more</span></div>
-                            </a>
-                        </figure>
-                        <div class="post_info">
-                            <small>Category - 20 Nov. 2017</small>
-                            <h2><a href="blog-post.html">JUDUL BERITA</a></h2>
-                            <p>Deskripsi singkat tentang berita yang dimuat ....</p>
-                            <ul style="text-align: center">
-                                <button class="btn btn_1" style="border-radius: 20px">Baca Selengkapnya</button>
-                            </ul>
-                        </div>
-                    </article>
-                    <!-- /article -->
-                </div>
-                <!-- /col -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="750">
-                    <article class="blog">
-                        <figure>
-                            <a href="#"><img src="{{ asset('yes/img/blog-1.jpg') }}" alt="">
-                                <div class="preview"><span>Read more</span></div>
-                            </a>
-                        </figure>
-                        <div class="post_info">
-                            <small>Category - 20 Nov. 2017</small>
-                            <h2><a href="blog-post.html">JUDUL BERITA</a></h2>
-                            <p>Deskripsi singkat tentang berita yang dimuat ....</p>
-                            <ul style="text-align: center">
-                                <button class="btn btn_1" style="border-radius: 20px">Baca Selengkapnya</button>
-                            </ul>
-                        </div>
-                    </article>
-                    <!-- /article -->
-                </div>
-                <!-- /col -->
+                
             </div>
             <!-- /row -->
             <hr>
@@ -382,52 +367,7 @@
                 <h2>ARTIKEL</h2>
                 <a href="#">Lihat Semua</a>
             </div>
-            {{-- <div class="row">
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 isotope-item latest" data-aos="fade-up" data-aos-delay="300">
-                    <div class="strips">
-                        <figure>
-                            <img src="{{asset('yes/img/lazy-placeholder.png')}}" data-src="{{asset('yes/img/lazy-placeholder.png')}}" class="img-fluid lazy" alt="">
-                            <a href="detail-restaurant.html" class="strip_info">
-                                <small>Kategori</small>
-                                <div class="item_title">
-                                    <h3>JUDUL</h3>
-                                    <small>27 Agustus 2021</small>
-                                </div>
-                            </a>
-                        </figure>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 isotope-item latest" data-aos="fade-up" data-aos-delay="600">
-                    <div class="strips">
-                        <figure>
-                            <img src="{{asset('yes/img/lazy-placeholder.png')}}" data-src="{{asset('yes/img/lazy-placeholder.png')}}" class="img-fluid lazy" alt="">
-                            <a href="detail-restaurant.html" class="strip_info">
-                                <small>Kategori</small>
-                                <div class="item_title">
-                                    <h3>JUDUL</h3>
-                                    <small>27 Agustus 2021</small>
-                                </div>
-                            </a>
-                        </figure>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 isotope-item latest" data-aos="fade-up" data-aos-delay="900">
-                    <div class="strips">
-                        <figure>
-                            <img src="{{asset('yes/img/lazy-placeholder.png')}}" data-src="{{asset('yes/img/lazy-placeholder.png')}}" class="img-fluid lazy" alt="">
-                            <a href="detail-restaurant.html" class="strip_info">
-                                <small>Kategori</small>
-                                <div class="item_title">
-                                    <h3>JUDUL</h3>
-                                    <small>27 Agustus 2021</small>
-                                </div>
-                            </a>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-             --}}
-            {{-- customer --}}
+            
             
         </div>
         <!-- /container -->

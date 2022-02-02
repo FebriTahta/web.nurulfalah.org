@@ -862,4 +862,10 @@
   .bidang__name{
     display: none !important;
   }
+  .baris{
+    display: none !important;
+  }
+  .bidang{
+    margin-top: 20px;
+  }
 }

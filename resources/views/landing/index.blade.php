@@ -61,7 +61,7 @@
             
 
             <div class="main_title">
-                <h2 data-aos="fade-right" data-aos-delay="150">EVENTS</h2>
+                <h2 data-aos="fade-right" data-aos-delay="150">AGENDA</h2>
                 <p data-aos="fade-right" data-aos-delay="450">Daftar Kegiatan</p>
                 <span data-aos="fade-right" data-aos-delay="750"><em></em></span>
             </div>
@@ -154,8 +154,10 @@
                 </div>
             </div>
             <!-- /carousel -->
-            <hr>
-            <div class="row">
+            <div class="baris">
+                <hr>
+            </div>
+            <div class="row bidang">
                 <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="300">
                     <div class="form-group bidang__image" style="margin-top: 10px">
                         <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">

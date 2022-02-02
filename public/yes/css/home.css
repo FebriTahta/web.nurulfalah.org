@@ -896,12 +896,30 @@
   position: fixed;
   width: 400px;
   height: 60px;
-  background: #fff;
+  /* background: #fff; */
+  background: #61f3b6;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   z-index: 9999999999 !important;
+}
+
+@media (max-width: 500px) {
+  .navigationx{
+    bottom: 0;
+    position: fixed;
+    width: 400px;
+    height: 60px;
+    /* background: #fff; */
+    /* background: #6196f3; */
+    background: #61f3c7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 9999999999 !important;
+  }
 }
 
 .navigationx ul{
@@ -937,20 +955,23 @@
   line-height: 65px;
   font-size: 1.5em;
   transition: 0.5s;
-  color: black;
+  color: #f4f4f4;
 }
 
 .navigationx ul li.active a .icon{
   transform: translateY(-32px);
-  color: #6196f3;
+  /* color: #6196f3; */
+  color: #fff;
   
 }
 
 .navigationx ul li a .text{
   position: absolute;
-  background: #6196f3;
+  /* background: #6196f3; */
+  /* background: #fff; */
+  background: #fff;
   border-radius: 12px;
-  color: #fff;
+  color: #61f3c7;
   padding: 2px 7px;
   font-weight: 400;
   font-size: 0.75em;
@@ -971,7 +992,8 @@
   top: -35px;
   width: 70px;
   height: 70px;
-  background: #fff;
+  background: #61f3c7;
+  
   border-radius: 50%;
   z-index: 1;
   transition: 0.5s; 
@@ -986,7 +1008,7 @@
   height: 30px;
   background: transparent;
   border-radius: 50%;
-  box-shadow: 15px 18px #fff;
+  box-shadow: 15px 18px #61f3c7;
 }
 .indicator::after{
   content: '';
@@ -997,7 +1019,7 @@
   height: 30px;
   background: transparent;
   border-radius: 50%;
-  box-shadow: -15px 18px #fff;
+  box-shadow: -15px 18px #61f3c7;
 }
 
 .navigationx ul li:nth-child(1).active ~ .indicator{

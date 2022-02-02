@@ -5,6 +5,7 @@
     </style>
 @endsection
 @section('content')
+
     <main>
         <div id="rev_slider_44_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="mask-showcase"
             data-source="gallery">
@@ -36,7 +37,6 @@
             </div>
         </div>
         {{-- <div class="wave hero"></div> --}}
-
         {{-- <div class="page_header element_to_stick"> --}}
         <div class="page_header" data-aos="fade-up" data-aos-delay="150">
             <div class="container">
@@ -58,7 +58,6 @@
         <!-- /page_header -->
 
         <div class="container" style="margin-top: 20px">
-
 
             <div class="main_title">
                 <h2 data-aos="fade-right" data-aos-delay="150">AGENDA</h2>
@@ -368,58 +367,56 @@
                 <h2>ARTIKEL</h2>
                 <a href="#">Lihat Semua</a>
             </div>
-
+            <div class="body">
+                <div class="navigationx">
+                    <ul>
+                        <li class="list active">
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </span>
+                                <span class="text">Home</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="business-outline"></ion-icon>
+                                </span>
+                                <span class="text">Profile</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="newspaper-outline"></ion-icon>
+                                </span>
+                                <span class="text">Berita</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="document-outline"></ion-icon>
+                                </span>
+                                <span class="text">Artikel</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="people-circle-outline"></ion-icon>
+                                </span>
+                                <span class="text">Contact</span>
+                            </a>
+                        </li>
+                        <div class="indicator"></div>
+                    </ul>
+                </div>
+            </div>
 
         </div>
         <!-- /container -->
 
     </main>
-
-    <body>
-        <div class="navigationx">
-            <ul>
-                <li class="list active">
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="home-outline"></ion-icon>
-                        </span>
-                        <span class="text">Home</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="business-outline"></ion-icon>
-                        </span>
-                        <span class="text">Profile</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="newspaper-outline"></ion-icon>
-                        </span>
-                        <span class="text">Berita</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="document-outline"></ion-icon>
-                        </span>
-                        <span class="text">Artikel</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="people-circle-outline"></ion-icon>
-                        </span>
-                        <span class="text">Contact</span>
-                    </a>
-                </li>
-                <div class="indicator"></div>
-            </ul>
-        </div>
-    </body>
 @endsection

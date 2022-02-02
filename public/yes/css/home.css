@@ -81,7 +81,7 @@
   height: 30px;
   text-align: center;
   font-weight: 500;
-  z-index: 9;
+  z-index: 8;
 }
 .owl-theme.categories_carousel .item a figure,
 .item_version_2 a figure {
@@ -293,7 +293,7 @@
   width: 50px;
   height: 30px;
   opacity: 0.6;
-  z-index: 99;
+  z-index: 98;
   display: none;
 }
 @media (max-width: 767px) {
@@ -877,8 +877,22 @@
 
 /* navigasi mobile */
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  background: rgb(182, 188, 199);
+}
 .navigationx{
-  bottom: 0;
+  bottom: 10px;
   position: fixed;
   width: 400px;
   height: 60px;
@@ -887,6 +901,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  z-index: 9999999999 !important;
 }
 
 .navigationx ul{

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('head')
     <style>
-        
+
     </style>
 @endsection
 @section('content')
@@ -56,9 +56,9 @@
             </div>
         </div>
         <!-- /page_header -->
-        
+
         <div class="container" style="margin-top: 20px">
-            
+
 
             <div class="main_title">
                 <h2 data-aos="fade-right" data-aos-delay="150">AGENDA</h2>
@@ -160,7 +160,7 @@
             <div class="row bidang">
                 <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="300">
                     <div class="form-group bidang__image" style="margin-top: 10px">
-                        <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">
+                        <img src="{{ asset('yes/img/menu-thumb-placeholder.jpg') }}" style="border-radius: 20px" alt="">
                         {{-- <p style="margin: 5px 5px 5px 10px">DGTKI</p> --}}
                     </div>
                     <div class="form-group bidang__name">
@@ -170,7 +170,7 @@
                 </div>
                 <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="600">
                     <div class="form-group bidang__image" style="margin-top: 10px">
-                        <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">
+                        <img src="{{ asset('yes/img/menu-thumb-placeholder.jpg') }}" style="border-radius: 20px" alt="">
                     </div>
                     <div class="form-group bidang__name">
                         <h5>BIDANG</h5>
@@ -179,7 +179,7 @@
                 </div>
                 <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="900">
                     <div class="form-group bidang__image" style="margin-top: 10px">
-                        <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">
+                        <img src="{{ asset('yes/img/menu-thumb-placeholder.jpg') }}" style="border-radius: 20px" alt="">
                     </div>
                     <div class="form-group bidang__name">
                         <h5>BIDANG</h5>
@@ -188,7 +188,7 @@
                 </div>
                 <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="1200">
                     <div class="form-group bidang__image" style="margin-top: 10px">
-                        <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">
+                        <img src="{{ asset('yes/img/menu-thumb-placeholder.jpg') }}" style="border-radius: 20px" alt="">
                     </div>
                     <div class="form-group bidang__name">
                         <h5>BIDANG</h5>
@@ -212,7 +212,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-1"></div>
-                            <div class="col-lg-5" data-aos="fade-up" data-aos-delay="900">
+                            <div class="col-lg-5" data-aos="fade-up" data-aos-delay="750">
                                 <h3>PESANTREN AL QUR'AN</h3>
                                 <h2>NURUL FALAH</h2>
                                 <p style="text-align: justify">
@@ -344,7 +344,7 @@
                 <a href="#">Lihat Semua</a>
             </div>
             <div class="row">
-                
+
             </div>
             <!-- /row -->
             <hr>
@@ -368,10 +368,58 @@
                 <h2>ARTIKEL</h2>
                 <a href="#">Lihat Semua</a>
             </div>
-            
-            
+
+
         </div>
         <!-- /container -->
 
     </main>
+
+    <body>
+        <div class="navigationx">
+            <ul>
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="business-outline"></ion-icon>
+                        </span>
+                        <span class="text">Profile</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="newspaper-outline"></ion-icon>
+                        </span>
+                        <span class="text">Berita</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="document-outline"></ion-icon>
+                        </span>
+                        <span class="text">Artikel</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="people-circle-outline"></ion-icon>
+                        </span>
+                        <span class="text">Contact</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+    </body>
 @endsection

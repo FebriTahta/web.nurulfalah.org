@@ -169,6 +169,8 @@
 <script src="{{ asset('yes/js/common_func.js') }}"></script>
 <script src="{{ asset('yes/assets/validate.js') }}"></script>
 
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <!-- SLIDER REVOLUTION SCRIPTS  -->
 <script src="{{ asset('yes/revolution-slider/js/jquery.themepunch.tools.min.js') }}"></script>
 <script src="{{ asset('yes/revolution-slider/js/jquery.themepunch.revolution.min.js') }}"></script>
@@ -184,6 +186,16 @@
 <script src="{{ asset('yes/revolution-slider/js/extensions/revolution.addon.slicey.min.js') }}"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    const list = document.querySelectorAll('.list');
+    function activeLink()
+    {
+      list.forEach((item)=>
+      item.classList.remove('active'));
+      this.classList.add('active')
+    }
+    list.forEach((item)=> item.addEventListener('click', activeLink));
+  </script>
 <script>
     var tpj = jQuery;
 

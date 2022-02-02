@@ -61,8 +61,8 @@
             
 
             <div class="main_title">
-                <h2 data-aos="fade-right" data-aos-delay="150">MENU</h2>
-                <p data-aos="fade-right" data-aos-delay="450">Bidang & Events</p>
+                <h2 data-aos="fade-right" data-aos-delay="150">EVENTS</h2>
+                <p data-aos="fade-right" data-aos-delay="450">Daftar Kegiatan</p>
                 <span data-aos="fade-right" data-aos-delay="750"><em></em></span>
             </div>
             <!-- /main_title -->
@@ -157,41 +157,42 @@
             <hr>
             <div class="box_info_x" >
                 <div class="row">
-                    <div class="col-lg-3 col-6 bidang__card" >
+                    <div class="col-lg-3 col-3 bidang__card" >
                         <div class="form-group bidang__image" style="margin-top: 10px">
                             <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">
+                            {{-- <p style="margin: 5px 5px 5px 10px">DGTKI</p> --}}
                         </div>
-                        <div class="form-group bidang__name">
+                        {{-- <div class="form-group bidang__name">
                             <h5>BIDANG</h5>
                             <p>TILAWATI</p>
-                        </div>
+                        </div> --}}
                     </div>
-                    <div class="col-lg-3 col-6 bidang__card" >
+                    <div class="col-lg-3 col-3 bidang__card" >
                         <div class="form-group bidang__image" style="margin-top: 10px">
                             <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">
                         </div>
-                        <div class="form-group bidang__name">
+                        {{-- <div class="form-group bidang__name">
                             <h5>BIDANG</h5>
                             <p>DGTKI</p>
-                        </div>
+                        </div> --}}
                     </div>
-                    <div class="col-lg-3 col-6 bidang__card" >
+                    <div class="col-lg-3 col-3 bidang__card" >
                         <div class="form-group bidang__image" style="margin-top: 10px">
                             <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">
                         </div>
-                        <div class="form-group bidang__name">
+                        {{-- <div class="form-group bidang__name">
                             <h5>BIDANG</h5>
                             <p>TAHFIDZ</p>
-                        </div>
+                        </div> --}}
                     </div>
-                    <div class="col-lg-3 col-6 bidang__card" >
+                    <div class="col-lg-3 col-3 bidang__card" >
                         <div class="form-group bidang__image" style="margin-top: 10px">
                             <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">
                         </div>
-                        <div class="form-group bidang__name">
+                        {{-- <div class="form-group bidang__name">
                             <h5>BIDANG</h5>
                             <p>LAZIZ</p>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

@@ -854,6 +854,6 @@
 
 @media (max-width: 500px) {
   .bidang__image img{
-    width: 50px;
+    width: 50px !important;
   }
 }

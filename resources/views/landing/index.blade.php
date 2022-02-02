@@ -157,7 +157,7 @@
             <hr>
             <div class="box_info_x" >
                 <div class="row">
-                    <div class="col-lg-3 col-3 bidang__card" >
+                    <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="300">
                         <div class="form-group bidang__image" style="margin-top: 10px">
                             <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">
                             {{-- <p style="margin: 5px 5px 5px 10px">DGTKI</p> --}}
@@ -167,7 +167,7 @@
                             <p>TILAWATI</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-3 bidang__card" >
+                    <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="600">
                         <div class="form-group bidang__image" style="margin-top: 10px">
                             <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">
                         </div>
@@ -176,7 +176,7 @@
                             <p>DGTKI</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-3 bidang__card" >
+                    <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="900">
                         <div class="form-group bidang__image" style="margin-top: 10px">
                             <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">
                         </div>
@@ -185,7 +185,7 @@
                             <p>TAHFIDZ</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-3 bidang__card" >
+                    <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="1200">
                         <div class="form-group bidang__image" style="margin-top: 10px">
                             <img src="{{asset('yes/img/menu-thumb-placeholder.jpg')}}" style="border-radius: 20px" alt="">
                         </div>

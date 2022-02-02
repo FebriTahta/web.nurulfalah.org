@@ -856,6 +856,9 @@
   .bidang__image img{
     width: 80px !important;
   }
+}
+
+@media (min-width: 500px) {
   .bidang__name{
     display: none !important;
   }

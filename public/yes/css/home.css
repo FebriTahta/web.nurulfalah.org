@@ -856,8 +856,10 @@
   .bidang__image img{
     width: 80px !important;
   }
-  .baris{
-    margin-top: 20px;
+  hr {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+    border-color: #ededed !important;
   }
 }
 

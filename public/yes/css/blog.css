@@ -18,7 +18,7 @@ article.blog {
   overflow: hidden;
 }
 article.blog figure {
-  height: 260px;
+  height: 280px;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -102,6 +102,9 @@ article.blog figure img:hover {
   transform: translate(-50%, -50%) scale(1.1); */
 }
 @media (max-width: 991px) {
+  article.blog figure {
+    height: 250px;
+  }
   article.blog figure img {
     height: inherit;
     width: 100%;
@@ -111,12 +114,13 @@ article.blog figure img:hover {
 
 @media (max-width: 500px) {
   article.blog figure {
-    height: 240px;
+    height: 250px;
   }
   article.blog figure img {
-    height: 240px;
+    
     width: 100%;
     max-width: 100%;
+    height: auto;
   }
 }
 

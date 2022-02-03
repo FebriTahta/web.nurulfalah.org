@@ -187,12 +187,28 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
+    // $(function() {
+    //     $('a[href*=\\#]:not([href=\\#])').on('click', function() {
+    //         var target = $(this.hash);
+    //         target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+    //         if (target.length) {
+    //             $('html,body').animate({
+    //                 scrollTop: target.offset().top
+    //             }, 1000);
+    //             return false;
+    //         }
+    //     });
+    // });
+</script>
+
+<script>
     const list = document.querySelectorAll('.list');
     function activeLink()
     {
       list.forEach((item)=>
       item.classList.remove('active'));
-      this.classList.add('active')
+      this.classList.add('active');
+      
     }
     list.forEach((item)=> item.addEventListener('click', activeLink));
   </script>
@@ -333,6 +349,7 @@
         });
     });
 </script> --}}
+
 </body>
 
 </html>

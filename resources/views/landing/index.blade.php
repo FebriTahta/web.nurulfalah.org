@@ -195,7 +195,7 @@
                     </div>
                 </div>
             </div>
-            <hr>
+            <hr id="profile">
             {{-- <div class="wave hero"></div> --}}
             <div class="box_info_1" style="margin-top: 20px">
                 <div class="row justify-content-center">
@@ -207,7 +207,7 @@
                         <div class="row">
                             <div class="col-lg-5" data-aos="fade-right" data-aos-delay="600">
                                 <div class="wrapper_img">
-                                    <figure style="height: 300px"></figure><span></span>
+                                    <figure><img src="{{asset('yes/img/lazy-placeholder-600-400.png')}}" data-src="{{asset('yes/img/lazy-placeholder-600-400.png')}}" alt="" class="img-fluid lazy loaded" data-was-processed="true"></figure>
                                 </div>
                             </div>
                             <div class="col-lg-1"></div>
@@ -226,7 +226,7 @@
                 </div>
             </div>
             <!-- /container -->
-            <hr>
+            <hr id="berita">
             <div class="main_title">
                 <span><em></em></span>
                 <h2>Topik Terkini</h2>
@@ -361,7 +361,7 @@
                 </div>
                 <!-- /wrapper -->
             </div>
-            <hr>
+            <hr id="artikel">
             <div class="main_title">
                 <span><em></em></span>
                 <h2>ARTIKEL</h2>
@@ -379,15 +379,15 @@
                             </a>
                         </li>
                         <li class="list">
-                            <a href="#">
-                                <span class="icon">
+                            <a href="#profile">
+                                <span class="icon" >
                                     <ion-icon name="business-outline"></ion-icon>
                                 </span>
                                 <span class="text">Profile</span>
                             </a>
                         </li>
                         <li class="list">
-                            <a href="#">
+                            <a href="#berita">
                                 <span class="icon">
                                     <ion-icon name="newspaper-outline"></ion-icon>
                                 </span>
@@ -395,7 +395,7 @@
                             </a>
                         </li>
                         <li class="list">
-                            <a href="#">
+                            <a href="#artikel">
                                 <span class="icon">
                                     <ion-icon name="document-outline"></ion-icon>
                                 </span>

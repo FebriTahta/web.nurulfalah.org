@@ -913,7 +913,7 @@
     height: 60px;
     /* background: #fff; */
     /* background: #6196f3; */
-    background: #61f3c7;
+    background: #61f3b6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -971,7 +971,7 @@
   /* background: #fff; */
   background: #fff;
   border-radius: 12px;
-  color: #61f3c7;
+  color: #61f3b6;
   padding: 2px 7px;
   font-weight: 400;
   font-size: 0.75em;
@@ -992,7 +992,7 @@
   top: -35px;
   width: 70px;
   height: 70px;
-  background: #61f3c7;
+  background: #61f3b6;
   
   border-radius: 50%;
   z-index: 1;
@@ -1008,7 +1008,7 @@
   height: 30px;
   background: transparent;
   border-radius: 50%;
-  box-shadow: 15px 18px #61f3c7;
+  box-shadow: 15px 18px #61f3b6;
 }
 .indicator::after{
   content: '';
@@ -1019,7 +1019,7 @@
   height: 30px;
   background: transparent;
   border-radius: 50%;
-  box-shadow: -15px 18px #61f3c7;
+  box-shadow: -15px 18px #61f3b6;
 }
 
 .navigationx ul li:nth-child(1).active ~ .indicator{

@@ -224,9 +224,10 @@
                         </div>
                     </div>
                 </div>
+                <div id="berita"></div>
             </div>
             <!-- /container -->
-            <hr id="berita">
+            <hr>
             <div class="main_title">
                 <span><em></em></span>
                 <h2>ARTIKEL</h2>
@@ -246,7 +247,7 @@
                             </a>
                         </figure>
                         <ul>
-                            <li><span class="">JUDUL</span>
+                            <li><span class="">02 Februari 2022</span>
                             </li>
                             <li>
                                 <div class="score"><strong>520</strong></div>
@@ -262,11 +263,11 @@
                                 data-src="{{ asset('yes/img/muslim_unggulan.jpg') }}" class="owl-lazy" alt=""
                                 width="460" height="310">
                             <a href="#" class="strip_info">
-                                <small>Berita / Artikel</small>
+                                <small>Hikmah</small>
                             </a>
                         </figure>
                         <ul>
-                            <li><span class="">JUDUL</span>
+                            <li><span class="">02 Februari 2022</span>
                             </li>
                             <li>
                                 <div class="score"><strong>520</strong></div>
@@ -282,11 +283,11 @@
                                 data-src="{{ asset('yes/img/yatim.jpg') }}" class="owl-lazy" alt=""
                                 width="460" height="310">
                             <a href="#" class="strip_info">
-                                <small>Berita / Artikel</small>
+                                <small>Hikmah</small>
                             </a>
                         </figure>
                         <ul>
-                            <li><span class="">JUDUL</span>
+                            <li><span class="">02 Februari 2022</span>
                             </li>
                             <li>
                                 <div class="score"><strong>520</strong></div>
@@ -302,11 +303,11 @@
                                 data-src="{{ asset('yes/img/bersyukur.jpg') }}" class="owl-lazy" alt=""
                                 width="460" height="310">
                             <a href="#" class="strip_info">
-                                <small>Berita / Artikel</small>
+                                <small>Hikmah</small>
                             </a>
                         </figure>
                         <ul>
-                            <li><span class="">JUDUL</span>
+                            <li><span class="">02 Februari 2022</span>
                             </li>
                             <li>
                                 <div class="score"><strong>520</strong></div>
@@ -326,13 +327,13 @@
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
                     <article class="blog">
                         <figure>
-                            <a href="#"><img src="{{asset('yes/img/lazy-placeholder-600-400.png')}}" alt="">
+                            <a href="#"><img src="{{asset('yes/img/berita1.jpeg')}}" alt="">
                                 <div class="preview"><span>Read more</span></div>
                             </a>
                         </figure>
                         <div class="post_info">
                             <small>Category - 20 Nov. 2017</small>
-                            <h2><a href="blog-post.html">Ea exerci option hendrerit</a></h2>
+                            <h2><a href="#">Ea exerci option hendrerit</a></h2>
                             <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi, in eos quod omnes epicurei, ex veri qualisque scriptorem mei.</p>
                             <ul>
                                 <div>

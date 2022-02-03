@@ -3805,6 +3805,22 @@ header.black_nav .dropdown.user a:hover {
   }
 }
 
+@media (max-width: 300px) {
+  .strip figure {
+    margin-bottom: 5px;
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+    max-width: 100%;
+    width: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #ededed;
+  }
+}
+
 
 .strip figure img {
   position: absolute;

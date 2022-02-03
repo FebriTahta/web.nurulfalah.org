@@ -231,7 +231,7 @@
             <div class="main_title">
                 <span><em></em></span>
                 <h2>ARTIKEL</h2>
-                <small>Tulisan Kami</small>
+                <p>Perkaya Wawasan</p>
                 <a href="#" type="button" class="btn btn-sm btn_1">MORE</a>
             </div>
             <div class="owl-carousel owl-theme carousel_4">
@@ -327,7 +327,7 @@
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
                     <article class="blog">
                         <figure>
-                            <a href="#"><img src="{{asset('yes/img/berita1.jpeg')}}" alt="">
+                            <a href="#"><img src="{{asset('yes/img/berita2.jpeg')}}" alt="">
                                 <div class="preview"><span>Read more</span></div>
                             </a>
                         </figure>

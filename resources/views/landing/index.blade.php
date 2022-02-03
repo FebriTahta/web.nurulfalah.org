@@ -231,18 +231,18 @@
                 <span><em></em></span>
                 <h2>Topik Terkini</h2>
                 <p>Trending Topik Bulan Ini</p>
-                <a href="#">Lihat Semua</a>
+                <a href="#" type="button" class="btn btn-sm btn_1">MORE</a>
             </div>
             <div class="owl-carousel owl-theme carousel_4">
                 <div class="item" data-aos="fade-right" data-aos-delay="150">
                     <div class="strip">
                         <figure>
-                            <span class="ribbon off">Kategori</span>
-                            <img src="{{ asset('yes/img/lazy-placeholder.jpg') }}"
-                                data-src="{{ asset('yes/img/lazy-placeholder.jpg') }}" class="owl-lazy" alt=""
+                            {{-- <span class="ribbon off">Kategori</span> --}}
+                            <img src="{{ asset('yes/img/nfkalsel.jpg') }}"
+                                data-src="{{ asset('yes/img/nfkalsel.jpg') }}" class="owl-lazy" alt=""
                                 width="460" height="310">
                             <a href="#" class="strip_info">
-                                <small>Berita / Artikel</small>
+                                <small>Hikmah</small>
                             </a>
                         </figure>
                         <ul>
@@ -257,9 +257,9 @@
                 <div class="item" data-aos="fade-right" data-aos-delay="450">
                     <div class="strip">
                         <figure>
-                            <span class="ribbon off">Kategori</span>
-                            <img src="{{ asset('yes/img/lazy-placeholder.jpg') }}"
-                                data-src="{{ asset('yes/img/lazy-placeholder.jpg') }}" class="owl-lazy" alt=""
+                            {{-- <span class="ribbon off">Kategori</span> --}}
+                            <img src="{{ asset('yes/img/muslim_unggulan.jpg') }}"
+                                data-src="{{ asset('yes/img/muslim_unggulan.jpg') }}" class="owl-lazy" alt=""
                                 width="460" height="310">
                             <a href="#" class="strip_info">
                                 <small>Berita / Artikel</small>
@@ -277,9 +277,9 @@
                 <div class="item" data-aos="fade-right" data-aos-delay="750">
                     <div class="strip">
                         <figure>
-                            <span class="ribbon off">Kategori</span>
-                            <img src="{{ asset('yes/img/lazy-placeholder.jpg') }}"
-                                data-src="{{ asset('yes/img/lazy-placeholder.jpg') }}" class="owl-lazy" alt=""
+                            {{-- <span class="ribbon off">Kategori</span> --}}
+                            <img src="{{ asset('yes/img/yatim.jpg') }}"
+                                data-src="{{ asset('yes/img/yatim.jpg') }}" class="owl-lazy" alt=""
                                 width="460" height="310">
                             <a href="#" class="strip_info">
                                 <small>Berita / Artikel</small>
@@ -297,29 +297,9 @@
                 <div class="item" data-aos="fade-right" data-aos-delay="1050">
                     <div class="strip">
                         <figure>
-                            <span class="ribbon off">Kategori</span>
-                            <img src="{{ asset('yes/img/lazy-placeholder.jpg') }}"
-                                data-src="{{ asset('yes/img/lazy-placeholder.jpg') }}" class="owl-lazy" alt=""
-                                width="460" height="310">
-                            <a href="#" class="strip_info">
-                                <small>Berita / Artikel</small>
-                            </a>
-                        </figure>
-                        <ul>
-                            <li><span class="">JUDUL</span>
-                            </li>
-                            <li>
-                                <div class="score"><strong>520</strong></div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="item" data-aos="fade-right" data-aos-delay="1350">
-                    <div class="strip">
-                        <figure>
-                            <span class="ribbon off">Kategori</span>
-                            <img src="{{ asset('yes/img/lazy-placeholder.jpg') }}"
-                                data-src="{{ asset('yes/img/lazy-placeholder.jpg') }}" class="owl-lazy" alt=""
+                            {{-- <span class="ribbon off">Kategori</span> --}}
+                            <img src="{{ asset('yes/img/bersyukur.jpg') }}"
+                                data-src="{{ asset('yes/img/bersyukur.jpg') }}" class="owl-lazy" alt=""
                                 width="460" height="310">
                             <a href="#" class="strip_info">
                                 <small>Berita / Artikel</small>
@@ -340,7 +320,7 @@
                 <span data-aos="fade-right" data-aos-delay="150"><em></em></span>
                 <h2 data-aos="fade-right" data-aos-delay="300">BERITA</h2>
                 <p data-aos="fade-right" data-aos-delay="450">Kabar Terkini Nurul Falah</p>
-                <a href="#">Lihat Semua</a>
+                <a href="#" type="button" class="btn btn_1">MORE</a>
             </div>
             <div class="row">
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
@@ -423,10 +403,10 @@
                 <!-- /wrapper -->
             </div>
             <hr >
-            <div class="main_title">
+            {{-- <div class="main_title">
                 <span data-aos="fade-right" data-aos-delay="150"><em></em></span>
                 <h2 data-aos="fade-right" data-aos-delay="300">ARTIKEL</h2>
-                <a href="#">Lihat Semua</a>
+                <a href="#" type="button" class="btn btn_1">SELENGKAPNYA</a>
             </div>
             <div class="row isotope-wrapper">
 	            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 isotope-item delivery" data-aos="fade-up" data-aos-delay="150">
@@ -492,7 +472,7 @@
 	                </div>
 	            </div>
 	            <!-- /strip grid -->
-	        </div>
+	        </div> --}}
             <hr>
             {{-- mobile --}}
             <div class="body">

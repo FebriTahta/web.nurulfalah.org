@@ -110,7 +110,7 @@
                     <a  class="open_close">
                         <i class="icon_close"></i><span>Menu</span>
                     </a>
-                    <a href="index.html"><img src="{{asset('yes/img/logo.svg')}}" width="162" height="35" alt=""></a>
+                    <a href="index.html"><img src="{{asset('yes/img/nf_logo_white.png')}}" width="162" height="62" alt=""></a>
                 </div>
                 <ul>
                     <li class="submenu">

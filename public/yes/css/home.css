@@ -133,8 +133,8 @@
   background: transparent;
   /* background: -webkit-linear-gradient(top, transparent, #000);
   background: linear-gradient(to bottom, transparent, #000); */
-  background: -webkit-linear-gradient(top, transparent, #61f3c7);
-  background: linear-gradient(to bottom, transparent, #61f3c7);
+  background: -webkit-linear-gradient(top, transparent, #1aad81);
+  background: linear-gradient(to bottom, transparent, #1aad81);
   box-sizing: border-box;
   line-height: 1;
 }
@@ -897,7 +897,7 @@
   width: 400px;
   height: 60px;
   /* background: #fff; */
-  background: #61f3b6;
+  background: #1aad81;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -913,7 +913,7 @@
     height: 60px;
     /* background: #fff; */
     /* background: #6196f3; */
-    background: #61f3b6;
+    background: #1aad81;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -971,7 +971,7 @@
   /* background: #fff; */
   background: #fff;
   border-radius: 12px;
-  color: #61f3b6;
+  color: #1aad81;
   padding: 2px 7px;
   font-weight: 400;
   font-size: 0.75em;
@@ -992,7 +992,7 @@
   top: -35px;
   width: 70px;
   height: 70px;
-  background: #61f3b6;
+  background: #1aad81;
   
   border-radius: 50%;
   z-index: 1;
@@ -1008,7 +1008,7 @@
   height: 30px;
   background: transparent;
   border-radius: 50%;
-  box-shadow: 15px 18px #61f3b6;
+  box-shadow: 15px 18px #1aad81;
 }
 .indicator::after{
   content: '';
@@ -1019,7 +1019,7 @@
   height: 30px;
   background: transparent;
   border-radius: 50%;
-  box-shadow: -15px 18px #61f3b6;
+  box-shadow: -15px 18px #1aad81;
 }
 
 .navigationx ul li:nth-child(1).active ~ .indicator{

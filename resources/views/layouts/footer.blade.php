@@ -77,29 +77,7 @@
         <hr>
         <div class="row add_bottom_25">
             <div class="col-lg-6">
-                <ul class="footer-selector clearfix">
-                    <li>
-                        <div class="styled-select lang-selector">
-                            <select>
-                                <option value="English" selected>English</option>
-                                <option value="French">French</option>
-                                <option value="Spanish">Spanish</option>
-                                <option value="Russian">Russian</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="styled-select currency-selector">
-                            <select>
-                                <option value="US Dollars" selected>US Dollars</option>
-                                <option value="Euro">Euro</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                            data-src="{{ asset('yes/img/cards_all.svg') }}" alt="" width="230" height="35"
-                            class="lazy"></li>
-                </ul>
+                
             </div>
             <div class="col-lg-6">
                 <ul class="additional_links">

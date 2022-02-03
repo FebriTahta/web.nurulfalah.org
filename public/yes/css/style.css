@@ -3805,7 +3805,7 @@ header.black_nav .dropdown.user a:hover {
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 280px) {
   .strip figure {
     margin-bottom: 5px;
     overflow: hidden;

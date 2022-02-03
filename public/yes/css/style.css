@@ -3870,6 +3870,106 @@ header.black_nav .dropdown.user a:hover {
   float: right;
 }
 
+/* strips */
+.strips figure img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  -moz-transform: translate(-50%, -50%) scale(1);
+  -ms-transform: translate(-50%, -50%) scale(1);
+  -o-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  width: 100%;
+  z-index: 1;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.strips figure:hover img {
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+  -moz-transform: translate(-50%, -50%) scale(1.1);
+  -ms-transform: translate(-50%, -50%) scale(1.1);
+  -o-transform: translate(-50%, -50%) scale(1.1);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.strips figure a.strip_info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  display: block;
+}
+.strips figure a.strip_info > small {
+  position: absolute;
+  background-color: white;
+  background-color: white;
+  left: 15px;
+  top: 15px;
+  color: #333;
+  font-weight: 500;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  padding: 6px 8px 4px 8px;
+  line-height: 1;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+.strips figure .item_title {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 65px 15px 10px 15px;
+  background: -moz-linear-gradient(top, transparent 5%, #61f3b6);
+  background: -webkit-linear-gradient(top, transparent 5%, #61f3b6);
+  background: linear-gradient(to bottom, transparent 5%, #61f3b6);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
+}
+.strips figure .item_title h3 {
+  font-size: 16px;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+.strips figure .item_title small {
+  font-weight: 500;
+  line-height: 1;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+.strips ul {
+  padding: 0;
+  margin: 0;
+}
+.strips ul li {
+  display: inline-block;
+  padding-top: 12px;
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+.strips ul li:last-child {
+  padding: 0;
+  float: right;
+}
+
 .ribbon {
   color: #fff;
   display: inline-block;

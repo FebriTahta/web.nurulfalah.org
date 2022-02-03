@@ -337,13 +337,74 @@
             </div>
             <hr>
             <div class="main_title">
-                <span><em></em></span>
-                <h2>BERITA</h2>
-                <p>Kabar Terkini Nurul Falah</p>
+                <span data-aos="fade-right" data-aos-delay="150"><em></em></span>
+                <h2 data-aos="fade-right" data-aos-delay="300">BERITA</h2>
+                <p data-aos="fade-right" data-aos-delay="450">Kabar Terkini Nurul Falah</p>
                 <a href="#">Lihat Semua</a>
             </div>
             <div class="row">
-
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+                    <article class="blog">
+                        <figure>
+                            <a href="#"><img src="{{asset('yes/img/lazy-placeholder-600-400.png')}}" alt="">
+                                <div class="preview"><span>Read more</span></div>
+                            </a>
+                        </figure>
+                        <div class="post_info">
+                            <small>Category - 20 Nov. 2017</small>
+                            <h2><a href="blog-post.html">Ea exerci option hendrerit</a></h2>
+                            <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi, in eos quod omnes epicurei, ex veri qualisque scriptorem mei.</p>
+                            <ul>
+                                <div>
+                                    <button class="btn btn_1" style="border-radius: 20px">Baca Selengkapnya</button>    
+                                </div> 
+                            </ul>
+                        </div>
+                    </article>
+                    <!-- /article -->
+                </div>
+                <!-- /col -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <article class="blog">
+                        <figure>
+                            <a href="#"><img src="{{asset('yes/img/lazy-placeholder-600-400.png')}}" alt="">
+                                <div class="preview"><span>Read more</span></div>
+                            </a>
+                        </figure>
+                        <div class="post_info">
+                            <small>Category - 20 Nov. 2017</small>
+                            <h2><a href="blog-post.html">At usu sale dolorum offendit</a></h2>
+                            <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi, in eos quod omnes epicurei, ex veri qualisque scriptorem mei.</p>
+                            <ul>
+                                <div>
+                                    <button class="btn btn_1" style="border-radius: 20px">Baca Selengkapnya</button>    
+                                </div>
+                            </ul>
+                        </div>
+                    </article>
+                    <!-- /article -->
+                </div>
+                <!-- /col -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="450">
+                    <article class="blog">
+                        <figure>
+                            <a href="#"><img src="{{asset('yes/img/lazy-placeholder-600-400.png')}}" alt="">
+                                <div class="preview"><span>Read more</span></div>
+                            </a>
+                        </figure>
+                        <div class="post_info">
+                            <small>Category - 20 Nov. 2017</small>
+                            <h2><a href="blog-post.html">Iusto nominavi petentium in</a></h2>
+                            <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi, in eos quod omnes epicurei, ex veri qualisque scriptorem mei.</p>
+                            <ul>
+                                <div>
+                                    <button class="btn btn_1" style="border-radius: 20px">Baca Selengkapnya</button>    
+                                </div>
+                            </ul>
+                        </div>
+                    </article>
+                    <!-- /article -->
+                </div>
             </div>
             <!-- /row -->
             <hr>
@@ -356,17 +417,84 @@
                         <small>Artikel</small>
                         <h3>Manfaat Membaca</h3>
                         <p>Menambah wawasan dan ilmu pengetahuan</p>
-                        <a href="grid-listing-filterscol.html" class="btn_1">Baca Sekarang!</a>
+                        <a href="grid-listing-filterscol.html" class="btn_1" id="artikel">Baca Sekarang!</a>
                     </div>
                 </div>
                 <!-- /wrapper -->
             </div>
-            <hr id="artikel">
+            <hr >
             <div class="main_title">
-                <span><em></em></span>
-                <h2>ARTIKEL</h2>
+                <span data-aos="fade-right" data-aos-delay="150"><em></em></span>
+                <h2 data-aos="fade-right" data-aos-delay="300">ARTIKEL</h2>
                 <a href="#">Lihat Semua</a>
             </div>
+            <div class="row isotope-wrapper">
+	            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 isotope-item delivery" data-aos="fade-up" data-aos-delay="150">
+	                <div class="strips">
+	                    <figure>
+	                        <img src="{{asset('yes/img/lazy-placeholder-600-400.png')}}" data-src="{{asset('yes/img/lazy-placeholder-600-400.png')}}" class="img-fluid lazy" alt="">
+	                        <a href="detail-restaurant.html" class="strip_info">
+	                            <small>Kategori</small>
+	                            <div class="item_title">
+	                                <h3>JUDUL ARTIKEL</h3>
+	                                <small>27 Agustus 2022</small>
+	                            </div>
+	                        </a>
+	                    </figure>
+	                    <ul>
+	                        <li><span class="take yes">Ustadz Mim Syaiful</span></li>
+	                        <li>
+	                            <div class="score"><strong>8.9</strong></div>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <!-- /strip grid -->
+	            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 isotope-item delivery" data-aos="fade-up" data-aos-delay="300">
+	                <div class="strips">
+	                    <figure>
+	                        <img src="{{asset('yes/img/lazy-placeholder-600-400.png')}}" data-src="{{asset('yes/img/lazy-placeholder-600-400.png')}}" class="img-fluid lazy" alt="">
+	                        <a href="detail-restaurant.html" class="strip_info">
+	                            <small>Kategori</small>
+	                            <div class="item_title">
+	                                <h3>JUDUL ARTIKEL</h3>
+	                                <small>27 Agustus 2022</small>
+	                            </div>
+	                        </a>
+	                    </figure>
+	                    <ul>
+	                        <li><span class="take yes">Ustadz Mim Syaiful</span></li>
+	                        <li>
+	                            <div class="score"><strong>8.9</strong></div>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <!-- /strip grid -->
+	            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 isotope-item delivery" data-aos="fade-up" data-aos-delay="450">
+	                <div class="strips">
+	                    <figure>
+	                        <img src="{{asset('yes/img/lazy-placeholder-600-400.png')}}" data-src="{{asset('yes/img/lazy-placeholder-600-400.png')}}" class="img-fluid lazy" alt="">
+	                        <a href="detail-restaurant.html" class="strip_info">
+	                            <small>Kategori</small>
+	                            <div class="item_title">
+	                                <h3>JUDUL ARTIKEL</h3>
+	                                <small>27 Agustus 2022</small>
+	                            </div>
+	                        </a>
+	                    </figure>
+	                    <ul>
+	                        <li><span class="take yes">Ustadz Mim Syaiful</span></li>
+	                        <li>
+	                            <div class="score"><strong>8.9</strong></div>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <!-- /strip grid -->
+	        </div>
+            <hr>
+            {{-- mobile --}}
             <div class="body">
                 <div class="navigationx">
                     <ul>

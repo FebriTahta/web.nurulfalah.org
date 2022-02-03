@@ -229,8 +229,8 @@
             <hr id="berita">
             <div class="main_title">
                 <span><em></em></span>
-                <h2>Topik Terkini</h2>
-                <p>Trending Topik Bulan Ini</p>
+                <h2>ARTIKEL</h2>
+                <small>Tulisan Kami</small>
                 <a href="#" type="button" class="btn btn-sm btn_1">MORE</a>
             </div>
             <div class="owl-carousel owl-theme carousel_4">

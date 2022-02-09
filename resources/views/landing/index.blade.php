@@ -73,8 +73,8 @@
                                 data-src="{{ asset('yes/img/home_cat_pizza2.jpg') }}" alt="" class="owl-lazy"
                                 width="350" height="450">
                             <div class="info">
-                                <h3>Tabungamal.id</h3>
-                                <small>-</small>
+                                <h3>Laziz NF</h3>
+                                <small>Tabungamal.id</small>
                             </div>
                         </figure>
                     </a>

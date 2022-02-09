@@ -1,28 +1,28 @@
 <footer>
     <div class="wave footer"></div>
     <div class="container margin_60_40 fix_mobile">
-        <div class="row">
+        <div class="row" style="text-decoration-color: white">
             <div class="col-lg-3 col-md-6">
-                <h3 data-target="#collapse_1">Quick Links</h3>
-                <div class="collapse dont-collapse-sm links" id="collapse_1">
+                <h3 data-target="#collapse_1">Menu</h3>
+                <div  class="collapse dont-collapse-sm links" id="collapse_1">
                     <ul>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="submit-restaurant.html">Add your restaurant</a></li>
-                        <li><a href="help.html">Help</a></li>
-                        <li><a href="register.html">My account</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contacts.html">Contacts</a></li>
+                        <li><a style="color: white" href="about.html">About us</a></li>
+                        <li><a style="color: white" href="submit-restaurant.html">Bidang</a></li>
+                        <li><a style="color: white" href="help.html">Events</a></li>
+                        <li><a style="color: white" href="register.html">Media</a></li>
+                        <li><a style="color: white" href="blog.html">Cabang</a></li>
+                        <li><a style="color: white" href="contacts.html">Contacts</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <h3 data-target="#collapse_2">Categories</h3>
+                <h3 data-target="#collapse_2" >Media Categories</h3>
                 <div class="collapse dont-collapse-sm links" id="collapse_2">
                     <ul>
-                        <li><a href="grid-listing-filterscol.html">Top Categories</a></li>
-                        <li><a href="grid-listing-filterscol-full-masonry.html">Best Rated</a></li>
-                        <li><a href="grid-listing-filterscol-full-width.html">Best Price</a></li>
-                        <li><a href="grid-listing-filterscol-full-masonry.html">Latest Submissions</a></li>
+                        <li><a style="color: white" href="grid-listing-filterscol.html">Top Categories</a></li>
+                        <li><a style="color: white" href="grid-listing-filterscol-full-masonry.html">Best Rated</a></li>
+                        <li><a style="color: white" href="grid-listing-filterscol-full-width.html">Most Watched</a></li>
+                        <li><a style="color: white" href="grid-listing-filterscol-full-masonry.html">Latest News</a></li>
                     </ul>
                 </div>
             </div>
@@ -30,14 +30,14 @@
                 <h3 data-target="#collapse_3">Contacts</h3>
                 <div class="collapse dont-collapse-sm contacts" id="collapse_3">
                     <ul>
-                        <li><i class="icon_house_alt"></i>97845 Baker st. 567<br>Los Angeles - US</li>
-                        <li><i class="icon_mobile"></i>+94 423-23-221</li>
-                        <li><i class="icon_mail_alt"></i><a href="#0">info@domain.com</a></li>
+                        <li><i style="color: white" class="icon_house_alt"></i>97845 Baker st. 567<br>Los Angeles - US</li>
+                        <li><i style="color: white" class="icon_mobile"></i>+94 423-23-221</li>
+                        <li><i style="color: white" class="icon_mail_alt"></i><a href="#0">info@domain.com</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <h3 data-target="#collapse_4">Keep in touch</h3>
+                <h3 data-target="#collapse_4">Apa yang anda cari ?</h3>
                 <div class="collapse dont-collapse-sm" id="collapse_4">
                     <div id="newsletter">
                         <div id="message-newsletter"></div>
@@ -164,6 +164,22 @@
 <script src="{{ asset('yes/revolution-slider/js/extensions/revolution.addon.slicey.min.js') }}"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+
+@yield('script')
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+$('.autoWidth').lightSlider({
+    autoWidth:true,
+    onSliderLoad: function() {
+        $('.autoWidth').removeClass('cS-hidden');
+    } 
+});  
+});
+
+</script>
 <script>
     // $(function() {
     //     $('a[href*=\\#]:not([href=\\#])').on('click', function() {
@@ -178,7 +194,6 @@
     //     });
     // });
 </script>
-
 <script>
     const list = document.querySelectorAll('.list');
     function activeLink()

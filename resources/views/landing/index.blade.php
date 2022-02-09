@@ -1,8 +1,6 @@
 @extends('layouts.master')
 @section('head')
-    <style>
-
-    </style>
+    
 @endsection
 @section('content')
 
@@ -158,9 +156,9 @@
             </div>
             <div class="row bidang">
                 <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="form-group bidang__image" style="margin-top: 10px">
+                    <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
                         <img src="{{ asset('yes/img/menu-thumb-placeholder.jpg') }}" style="border-radius: 20px" alt="">
-                        {{-- <p style="margin: 5px 5px 5px 10px">DGTKI</p> --}}
+                        <p style="margin-top: 10px; color: rgb(54, 211, 145)">TILAWATI</p>
                     </div>
                     <div class="form-group bidang__name">
                         <h5>BIDANG</h5>
@@ -168,8 +166,9 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="form-group bidang__image" style="margin-top: 10px">
+                    <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
                         <img src="{{ asset('yes/img/menu-thumb-placeholder.jpg') }}" style="border-radius: 20px" alt="">
+                        <p style="margin-top: 10px; color: rgb(54, 211, 145)">DGTKI</p>
                     </div>
                     <div class="form-group bidang__name">
                         <h5>BIDANG</h5>
@@ -177,8 +176,9 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="900">
-                    <div class="form-group bidang__image" style="margin-top: 10px">
+                    <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
                         <img src="{{ asset('yes/img/menu-thumb-placeholder.jpg') }}" style="border-radius: 20px" alt="">
+                        <p style="margin-top: 10px; color: rgb(54, 211, 145)">TAHFIDZ</p>
                     </div>
                     <div class="form-group bidang__name">
                         <h5>BIDANG</h5>
@@ -186,8 +186,9 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="1200">
-                    <div class="form-group bidang__image" style="margin-top: 10px">
+                    <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
                         <img src="{{ asset('yes/img/menu-thumb-placeholder.jpg') }}" style="border-radius: 20px" alt="">
+                        <p style="margin-top: 10px; color: rgb(54, 211, 145)">LAZIZ</p>
                     </div>
                     <div class="form-group bidang__name">
                         <h5>BIDANG</h5>
@@ -207,7 +208,9 @@
                         <div class="row">
                             <div class="col-lg-5" data-aos="fade-right" data-aos-delay="600">
                                 <div class="wrapper_img">
-                                    <figure><img src="{{asset('yes/img/lazy-placeholder-600-400.png')}}" data-src="{{asset('yes/img/lazy-placeholder-600-400.png')}}" alt="" class="img-fluid lazy loaded" data-was-processed="true"></figure>
+                                    <figure><img src="{{ asset('yes/img/lazy-placeholder-600-400.png') }}"
+                                            data-src="{{ asset('yes/img/lazy-placeholder-600-400.png') }}" alt=""
+                                            class="img-fluid lazy loaded" data-was-processed="true"></figure>
                                 </div>
                             </div>
                             <div class="col-lg-1"></div>
@@ -240,9 +243,9 @@
                         <figure>
                             {{-- <span class="ribbon off">Kategori</span> --}}
                             <img src="{{ asset('yes/img/nfkalsel.jpg') }}"
-                                data-src="{{ asset('yes/img/nfkalsel.jpg') }}" class="owl-lazy" alt=""
-                                width="460" height="310">
-                            <a href="#" class="strip_info">
+                                data-src="{{ asset('yes/img/nfkalsel.jpg') }}" class="owl-lazy" alt="" width="460"
+                                height="310">
+                            <a href="/post/contoh" class="strip_info">
                                 <small>Hikmah</small>
                             </a>
                         </figure>
@@ -279,9 +282,8 @@
                     <div class="strip">
                         <figure>
                             {{-- <span class="ribbon off">Kategori</span> --}}
-                            <img src="{{ asset('yes/img/yatim.jpg') }}"
-                                data-src="{{ asset('yes/img/yatim.jpg') }}" class="owl-lazy" alt=""
-                                width="460" height="310">
+                            <img src="{{ asset('yes/img/yatim.jpg') }}" data-src="{{ asset('yes/img/yatim.jpg') }}"
+                                class="owl-lazy" alt="" width="460" height="310">
                             <a href="#" class="strip_info">
                                 <small>Hikmah</small>
                             </a>
@@ -300,8 +302,8 @@
                         <figure>
                             {{-- <span class="ribbon off">Kategori</span> --}}
                             <img src="{{ asset('yes/img/bersyukur.jpg') }}"
-                                data-src="{{ asset('yes/img/bersyukur.jpg') }}" class="owl-lazy" alt=""
-                                width="460" height="310">
+                                data-src="{{ asset('yes/img/bersyukur.jpg') }}" class="owl-lazy" alt="" width="460"
+                                height="310">
                             <a href="#" class="strip_info">
                                 <small>Hikmah</small>
                             </a>
@@ -327,18 +329,19 @@
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
                     <article class="blog">
                         <figure>
-                            <a href="#"><img src="{{asset('yes/img/berita2.jpeg')}}" alt="">
+                            <a href="#"><img src="{{ asset('yes/img/berita2.jpeg') }}" alt="">
                                 <div class="preview"><span>Read more</span></div>
                             </a>
                         </figure>
                         <div class="post_info">
                             <small>Category - 20 Nov. 2017</small>
                             <h2><a href="#">Ea exerci option hendrerit</a></h2>
-                            <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi, in eos quod omnes epicurei, ex veri qualisque scriptorem mei.</p>
+                            <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi, in eos quod
+                                omnes epicurei, ex veri qualisque scriptorem mei.</p>
                             <ul>
                                 <div>
-                                    <button class="btn btn_1" style="border-radius: 20px">Baca Selengkapnya</button>    
-                                </div> 
+                                    <button class="btn btn_1" style="border-radius: 20px">Baca Selengkapnya</button>
+                                </div>
                             </ul>
                         </div>
                     </article>
@@ -348,17 +351,18 @@
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                     <article class="blog">
                         <figure>
-                            <a href="#"><img src="{{asset('yes/img/lazy-placeholder-600-400.png')}}" alt="">
+                            <a href="#"><img src="{{ asset('yes/img/lazy-placeholder-600-400.png') }}" alt="">
                                 <div class="preview"><span>Read more</span></div>
                             </a>
                         </figure>
                         <div class="post_info">
                             <small>Category - 20 Nov. 2017</small>
                             <h2><a href="blog-post.html">At usu sale dolorum offendit</a></h2>
-                            <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi, in eos quod omnes epicurei, ex veri qualisque scriptorem mei.</p>
+                            <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi, in eos quod
+                                omnes epicurei, ex veri qualisque scriptorem mei.</p>
                             <ul>
                                 <div>
-                                    <button class="btn btn_1" style="border-radius: 20px">Baca Selengkapnya</button>    
+                                    <button class="btn btn_1" style="border-radius: 20px">Baca Selengkapnya</button>
                                 </div>
                             </ul>
                         </div>
@@ -369,17 +373,18 @@
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="450">
                     <article class="blog">
                         <figure>
-                            <a href="#"><img src="{{asset('yes/img/lazy-placeholder-600-400.png')}}" alt="">
+                            <a href="#"><img src="{{ asset('yes/img/lazy-placeholder-600-400.png') }}" alt="">
                                 <div class="preview"><span>Read more</span></div>
                             </a>
                         </figure>
                         <div class="post_info">
                             <small>Category - 20 Nov. 2017</small>
                             <h2><a href="blog-post.html">Iusto nominavi petentium in</a></h2>
-                            <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi, in eos quod omnes epicurei, ex veri qualisque scriptorem mei.</p>
+                            <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi, in eos quod
+                                omnes epicurei, ex veri qualisque scriptorem mei.</p>
                             <ul>
                                 <div>
-                                    <button class="btn btn_1" style="border-radius: 20px">Baca Selengkapnya</button>    
+                                    <button class="btn btn_1" style="border-radius: 20px">Baca Selengkapnya</button>
                                 </div>
                             </ul>
                         </div>
@@ -388,22 +393,172 @@
                 </div>
             </div>
             <!-- /row -->
-            <hr>
-            <div class="banner lazy" data-aos="fade-up" data-aos-delay="300"
-                data-bg="url({{ asset('yes/img/banner_bg_desktop.jpg') }})" data-was-processed="true"
-                style="background-image: url({{ asset('yes/img/banner_bg_desktop.jpg') }});">
+            <hr id="artikel">
+            <div class="banner lazy" data-aos="fade-up" data-aos-delay="300" 
+                data-was-processed="true" style="background-color: #3f5d6a;"
+                >
                 <div class="wrapper d-flex align-items-center opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.3)"
-                    style="background-color: rgba(0, 0, 0, 0.3);">
+                    style="background-color: rgba(0, 0, 0, 0.3); " >
                     <div>
-                        <small>Artikel</small>
-                        <h3>Manfaat Membaca</h3>
-                        <p>Menambah wawasan dan ilmu pengetahuan</p>
-                        <a href="grid-listing-filterscol.html" class="btn_1" id="artikel">Baca Sekarang!</a>
+                        <small>PRODUCT</small>
+                        <h3>PRODUCT HIGH LIGHT</h3>
+                        <span >Berikut adalah beberapa product yang mensupport pembelajaran program-program kami</span>
+                        <br><br><a href="grid-listing-filterscol.html" class="btn_1" >Semua Product</a>
                     </div>
                 </div>
                 <!-- /wrapper -->
             </div>
-            <hr >
+            <hr>
+            <section class="products-slider">
+                <!--product-container---------------------->
+                <div class="product-container">
+                    <!--==slider-===============================----->
+                    <ul class="autoWidth" class="cs-hidden">
+                        <!--==card===========================-->
+                        <li class="item-a">
+                            <div class="product-box">
+                                <a href="https://www.apple.com/shop/buy-iphone/iphone-12-pro">
+                                    <!--**link**demo-->
+                                    <!--img--------->
+                                    <img alt=""
+                                        src="https://1.bp.blogspot.com/-qcHJ7dRlxR0/YRtlM-B4xaI/AAAAAAAAAAM/is73fwmKC-Em-H-KtHXkvRdIrFADjZ7UgCLcBGAsYHQ/s400/iphone.png" />
+                                    <!--colors------>
+                                    <div class="available-colors">
+                                        <div class="product-color" style="background-color: #5c5b58;"></div>
+                                        <div class="product-color" style="background-color: #e5e6e2;"></div>
+                                        <div class="product-color" style="background-color: #fcebd5;"></div>
+                                        <div class="product-color" style="background-color: #3f5d6a;"></div>
+                                    </div>
+                                    <!--buy & price-->
+                                    <div class="buy-price">
+                                        <!--price-->
+                                        <p>From $999or $41.62/mo. for 24 mo.before trade-in*</p>
+                                        <!--btn---->
+                                        <a href="#" class="buy-btn">Buy</a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <!--==card===========================-->
+                        <li class="item-a">
+
+                            <div class="product-box">
+                                <a href="#">
+                                    <!--img--------->
+                                    <img alt=""
+                                        src="https://1.bp.blogspot.com/-6hGHM5Wv4kQ/YRuanh1VkrI/AAAAAAAAAAU/1kBoC0NyzpQaQqAcCHe5IxcPaFpYg3WeACLcBGAsYHQ/s320/2.png" />
+                                    <!--colors------>
+                                    <div class="available-colors">
+                                        <div class="product-color" style="background-color: #f6f2ef;"></div>
+                                        <div class="product-color" style="background-color: #6e6d72;"></div>
+                                        <div class="product-color" style="background-color: #164a6f;"></div>
+                                        <div class="product-color" style="background-color: #daefd8;"></div>
+                                        <div class="product-color" style="background-color: #bab2e6;"></div>
+                                        <div class="product-color" style="background-color: #da3c3c;"></div>
+                                    </div>
+                                    <!--buy & price-->
+                                    <div class="buy-price">
+                                        <!--price-->
+                                        <p>From $999or $41.62/mo. for 24 mo.before trade-in*</p>
+                                        <!--btn---->
+                                        <a href="#" class="buy-btn">Buy</a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <!--==card===========================-->
+                        <li class="item-a">
+
+                            <div class="product-box">
+                                <a href="#">
+                                    <!--img--------->
+                                    <img alt=""
+                                        src="https://1.bp.blogspot.com/-Sit8qYwt4fQ/YRuay0FXJUI/AAAAAAAAAAY/xDqO5NwLQdguuSj5fWCAQEEBI7rzInemQCLcBGAsYHQ/s320/3.png" />
+                                    <!--colors------>
+                                    <div class="available-colors">
+                                        <div class="product-color" style="background-color: #f3f3f3;"></div>
+                                        <div class="product-color" style="background-color: #1d1d1e;"></div>
+                                        <div class="product-color" style="background-color: #ba0d2f;"></div>
+                                    </div>
+                                    <!--buy & price-->
+                                    <div class="buy-price">
+                                        <!--price-->
+                                        <p>From $999or $41.62/mo. for 24 mo.before trade-in*</p>
+                                        <!--btn---->
+                                        <a href="#" class="buy-btn">Buy</a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <!--==card===========================-->
+                        <li class="item-a">
+
+                            <div class="product-box">
+                                <a href="#">
+                                    <!--img--------->
+                                    <img alt=""
+                                        src="https://1.bp.blogspot.com/-r-PkmQTvnpE/YRua8ocscDI/AAAAAAAAAAg/JjGr_0vWuWwEc_tQ0KCbRvVI4jbvCZVSACLcBGAsYHQ/s320/4.jpg" />
+                                    <!--colors------>
+                                    <div class="available-colors">
+                                        <div class="product-color" style="background-color: #f9f6ef;"></div>
+                                        <div class="product-color" style="background-color: #1f2020;"></div>
+                                        <div class="product-color" style="background-color: #aee1cd;"></div>
+                                        <div class="product-color" style="background-color: #ffe681;"></div>
+                                        <div class="product-color" style="background-color: #d1cdda;"></div>
+                                        <div class="product-color" style="background-color: #ba0c2e;"></div>
+                                    </div>
+                                    <!--buy & price-->
+                                    <div class="buy-price">
+                                        <!--price-->
+                                        <p>From $999or $41.62/mo. for 24 mo.before trade-in*</p>
+                                        <!--btn---->
+                                        <a href="#" class="buy-btn">Buy</a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <!--==card===========================-->
+                        <li class="item-a">
+
+                            <div class="product-box">
+                                <a href="#">
+                                    <!--img--------->
+                                    <img alt=""
+                                        src="https://1.bp.blogspot.com/-vY1coOfNPz8/YRubHv4DS0I/AAAAAAAAAAo/QvFEuQoSZBM_i8vRdEA4B4rPpkEyIOXoQCLcBGAsYHQ/s320/5.png" />
+                                    <!--colors------>
+                                    <div class="available-colors">
+                                        <div class="product-color" style="background-color: #f4f4f4;"></div>
+                                        <div class="product-color" style="background-color: #1d1d1e;"></div>
+                                        <div class="product-color" style="background-color: #49aee6;"></div>
+                                        <div class="product-color" style="background-color: #fe9a8b;"></div>
+                                        <div class="product-color" style="background-color: #f9d045;"></div>
+                                        <div class="product-color" style="background-color: #990211;"></div>
+                                    </div>
+                                    <!--buy & price-->
+                                    <div class="buy-price">
+                                        <!--price-->
+                                        <p>From $999or $41.62/mo. for 24 mo.before trade-in*</p>
+                                        <!--btn---->
+                                        <a href="#" class="buy-btn">Buy</a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="pattern_2" style="margin-top: 20px">
+                <div class="container margin_120_100">
+                    <div class="main_title center mb-5">
+                        <span><em></em></span>
+                        <h2>-</h2>
+                    </div>
+                    
+                </div>
+                <!--/container-->
+            </div>
+            <!--/pattern_2 -->
             {{-- <div class="main_title">
                 <span data-aos="fade-right" data-aos-delay="150"><em></em></span>
                 <h2 data-aos="fade-right" data-aos-delay="300">ARTIKEL</h2>
@@ -489,7 +644,7 @@
                         </li>
                         <li class="list">
                             <a href="#profile">
-                                <span class="icon" >
+                                <span class="icon">
                                     <ion-icon name="business-outline"></ion-icon>
                                 </span>
                                 <span class="text">Profile</span>
@@ -508,7 +663,7 @@
                                 <span class="icon">
                                     <ion-icon name="document-outline"></ion-icon>
                                 </span>
-                                <span class="text">Artikel</span>
+                                <span class="text">Product</span>
                             </a>
                         </li>
                         <li class="list">

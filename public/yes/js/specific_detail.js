@@ -78,6 +78,16 @@
 	    offset_top: 0
 	});
 
+	if (screen.width > 500) {
+		$('.sticky_horizontal2').stick_in_parent({
+			offset_top: 70
+		});	
+	} else {
+		$('.sticky_horizontal2').stick_in_parent({
+			offset_top: 48
+		});
+	}
+
 	// Secondary scroll
 	var $sticky_nav = $('.secondary_nav');
 	$sticky_nav.find('a').on('click', function(e) {

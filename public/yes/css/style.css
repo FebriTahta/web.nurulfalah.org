@@ -4574,7 +4574,7 @@ a.btn_1.gradient:active:before, a.btn_1.gradient.nice-select.open:before,
   }
 }
 footer {
-  background-color: #f6f1d3;
+  background-color:rgb(54, 211, 145);
   padding: 65px 0 0 0;
   position: relative;
 }
@@ -4584,7 +4584,7 @@ footer {
   }
 }
 footer hr {
-  border-color: rgba(0, 0, 0, 0.05);
+  border-color: rgb(59, 226, 157);
   margin-top: 5px;
 }
 @media (max-width: 767px) {
@@ -4606,10 +4606,10 @@ footer .contacts ul li {
   padding-left: 35px;
   position: relative;
   margin-bottom: 10px;
-  color: #333;
+  color: rgb(255, 255, 255);
 }
 footer .contacts ul li a {
-  color: #333;
+  color: rgb(255, 255, 255);
   opacity: 1;
 }
 footer .contacts ul li a:hover {
@@ -4640,7 +4640,7 @@ footer h3 {
     font-size: 13px;
     font-size: 0.8125rem;
     cursor: pointer;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(250, 250, 250, 0.05);
     margin: 0 -15px 0 -15px;
     padding: 15px 15px 15px 15px;
     display: block;
@@ -6162,3 +6162,5 @@ a.box_topic.submit h3,
   border: 0;
   margin-bottom: 5px;
 }
+
+

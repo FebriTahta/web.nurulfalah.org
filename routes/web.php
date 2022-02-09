@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PostController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,3 +17,5 @@ Route::get('/', function () {
     // return view('welcome');
     return view('landing.index');
 });
+
+Route::get('/post/{contoh}',[PostController::class,'post_detail'])->name('post.detail');

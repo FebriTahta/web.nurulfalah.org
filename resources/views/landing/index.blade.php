@@ -69,11 +69,11 @@
                     <a href="grid-listing-filterscol.html">
                         <figure>
                             <span>01</span>
-                            <img src="{{ asset('yes/img/home_cat_placeholder.jpg') }}"
-                                data-src="{{ asset('yes/img/home_cat_placeholder.jpg') }}" alt="" class="owl-lazy"
+                            <img src="{{ asset('yes/img/home_cat_pizza2.jpg') }}"
+                                data-src="{{ asset('yes/img/home_cat_pizza2.jpg') }}" alt="" class="owl-lazy"
                                 width="350" height="450">
                             <div class="info">
-                                <h3>Event. 1</h3>
+                                <h3>Tabungamal.id</h3>
                                 <small>-</small>
                             </div>
                         </figure>
@@ -655,7 +655,7 @@
                                 <span class="icon">
                                     <ion-icon name="newspaper-outline"></ion-icon>
                                 </span>
-                                <span class="text">Berita</span>
+                                <span class="text">Media</span>
                             </a>
                         </li>
                         <li class="list">

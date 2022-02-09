@@ -43,7 +43,7 @@
         <div class="container">
             <ul id="secondary_nav">
                 {{-- <li><a class="list-group-item list-group-item-action" href="#section-4">Parenting</a></li> --}}
-                <li><a class="list-group-item list-group-item-action" href="#section-5"><i class="icon_chat_alt"></i>Ber-amal "Laziz NF"</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#section-5"><i class="icon_chat_alt"></i>Beramal "Laziz NF"</a></li>
                 <li><a class="list-group-item list-group-item-action" href="#comments"><i class="icon_chat_alt"></i>10 Komentar</a></li>
             </ul>
         </div>

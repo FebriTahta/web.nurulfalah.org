@@ -19,8 +19,9 @@ class CreatePostingsTable extends Migration
             $table->unsignedBigInteger('sumberposting_id')->nullable();
             $table->unsignedBigInteger('penulisposting_id')->nullable();
             $table->string('judul');
+            $table->string('slug');
             $table->longText('deskripsi');
-            $table->string('thumbnail');
+            $table->string('thumbnail')->nullable();
             $table->timestamps();
         });
     }

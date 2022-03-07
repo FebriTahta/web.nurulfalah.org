@@ -1,9 +1,7 @@
 @extends('layouts.master')
 @section('head')
-    
 @endsection
 @section('content')
-
     <main>
         <div id="rev_slider_44_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="mask-showcase"
             data-source="gallery">
@@ -56,6 +54,48 @@
         <!-- /page_header -->
 
         <div class="container" style="margin-top: 20px">
+            <div class="row bidang">
+                <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
+                        <img src="{{ asset('yes/img/menu-thumb-placeholder.jpg') }}" style="border-radius: 20px" alt="">
+                        <p style="margin-top: 10px; color: rgb(54, 211, 145)">TILAWATI</p>
+                    </div>
+                    <div class="form-group bidang__name">
+                        <h5>BIDANG</h5>
+                        <p>TILAWATI</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
+                        <img src="{{ asset('yes/img/menu-thumb-placeholder.jpg') }}" style="border-radius: 20px" alt="">
+                        <p style="margin-top: 10px; color: rgb(54, 211, 145)">DGTKI</p>
+                    </div>
+                    <div class="form-group bidang__name">
+                        <h5>BIDANG</h5>
+                        <p>DGTKI</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="900">
+                    <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
+                        <img src="{{ asset('yes/img/menu-thumb-placeholder.jpg') }}" style="border-radius: 20px" alt="">
+                        <p style="margin-top: 10px; color: rgb(54, 211, 145)">TAHFIDZ</p>
+                    </div>
+                    <div class="form-group bidang__name">
+                        <h5>BIDANG</h5>
+                        <p>TAHFIDZ</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="1200">
+                    <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
+                        <img src="{{ asset('yes/img/menu-thumb-placeholder.jpg') }}" style="border-radius: 20px" alt="">
+                        <p style="margin-top: 10px; color: rgb(54, 211, 145)">LAZIZ</p>
+                    </div>
+                    <div class="form-group bidang__name">
+                        <h5>BIDANG</h5>
+                        <p>LAZIZ</p>
+                    </div>
+                </div>
+            </div>
 
             <div class="main_title">
                 <h2 data-aos="fade-right" data-aos-delay="150">AGENDA</h2>
@@ -154,48 +194,7 @@
             <div class="baris">
                 <hr>
             </div>
-            <div class="row bidang">
-                <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
-                        <img src="{{ asset('yes/img/menu-thumb-placeholder.jpg') }}" style="border-radius: 20px" alt="">
-                        <p style="margin-top: 10px; color: rgb(54, 211, 145)">TILAWATI</p>
-                    </div>
-                    <div class="form-group bidang__name">
-                        <h5>BIDANG</h5>
-                        <p>TILAWATI</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
-                        <img src="{{ asset('yes/img/menu-thumb-placeholder.jpg') }}" style="border-radius: 20px" alt="">
-                        <p style="margin-top: 10px; color: rgb(54, 211, 145)">DGTKI</p>
-                    </div>
-                    <div class="form-group bidang__name">
-                        <h5>BIDANG</h5>
-                        <p>DGTKI</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="900">
-                    <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
-                        <img src="{{ asset('yes/img/menu-thumb-placeholder.jpg') }}" style="border-radius: 20px" alt="">
-                        <p style="margin-top: 10px; color: rgb(54, 211, 145)">TAHFIDZ</p>
-                    </div>
-                    <div class="form-group bidang__name">
-                        <h5>BIDANG</h5>
-                        <p>TAHFIDZ</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="1200">
-                    <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
-                        <img src="{{ asset('yes/img/menu-thumb-placeholder.jpg') }}" style="border-radius: 20px" alt="">
-                        <p style="margin-top: 10px; color: rgb(54, 211, 145)">LAZIZ</p>
-                    </div>
-                    <div class="form-group bidang__name">
-                        <h5>BIDANG</h5>
-                        <p>LAZIZ</p>
-                    </div>
-                </div>
-            </div>
+            
             <hr id="profile">
             {{-- <div class="wave hero"></div> --}}
             <div class="box_info_1" style="margin-top: 20px">
@@ -237,86 +236,22 @@
                 <p>Perkaya Wawasan</p>
                 <a href="#" type="button" class="btn btn-sm btn_1">MORE</a>
             </div>
-            <div class="owl-carousel owl-theme carousel_4">
-                <div class="item" data-aos="fade-right" data-aos-delay="150">
-                    <div class="strip">
-                        <figure>
-                            {{-- <span class="ribbon off">Kategori</span> --}}
-                            <img src="{{ asset('yes/img/nfkalsel.jpg') }}"
-                                data-src="{{ asset('yes/img/nfkalsel.jpg') }}" class="owl-lazy" alt="" width="460"
-                                height="310">
-                            <a href="/post/contoh" class="strip_info">
-                                <small>Hikmah</small>
-                            </a>
-                        </figure>
-                        <ul>
-                            <li><span class="">02 Februari 2022</span>
-                            </li>
-                            <li>
-                                <div class="score"><strong>520</strong></div>
-                            </li>
-                        </ul>
+            <div class="owl-carousel owl-theme carousel_4" id="zona-artikel">
+                <!--ZONA ARTIKEL-->
+                <?php $i = 300; ?>
+                @foreach ($artikels as $item)
+                    <div class="item" data-aos="fade-right" data-aos-delay="{{ $i }}">
+                        <div class="strip">
+                            <figure>
+                                <img src="{{ asset('img_thumbnail/' . $item->thumbnail) }}"
+                                    data-src="{{ asset('img_thumbnail/' . $item->thumbnail) }}" class="owl-lazy"
+                                    alt="" width="460" height="310">
+                                <a href="/post/{{$item->jenisposting->slug}}/{{$item->slug}}" class="strip_info"></a>
+                            </figure>
+                        </div>
                     </div>
-                </div>
-                <div class="item" data-aos="fade-right" data-aos-delay="450">
-                    <div class="strip">
-                        <figure>
-                            {{-- <span class="ribbon off">Kategori</span> --}}
-                            <img src="{{ asset('yes/img/muslim_unggulan.jpg') }}"
-                                data-src="{{ asset('yes/img/muslim_unggulan.jpg') }}" class="owl-lazy" alt=""
-                                width="460" height="310">
-                            <a href="#" class="strip_info">
-                                <small>Hikmah</small>
-                            </a>
-                        </figure>
-                        <ul>
-                            <li><span class="">02 Februari 2022</span>
-                            </li>
-                            <li>
-                                <div class="score"><strong>520</strong></div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="item" data-aos="fade-right" data-aos-delay="750">
-                    <div class="strip">
-                        <figure>
-                            {{-- <span class="ribbon off">Kategori</span> --}}
-                            <img src="{{ asset('yes/img/yatim.jpg') }}" data-src="{{ asset('yes/img/yatim.jpg') }}"
-                                class="owl-lazy" alt="" width="460" height="310">
-                            <a href="#" class="strip_info">
-                                <small>Hikmah</small>
-                            </a>
-                        </figure>
-                        <ul>
-                            <li><span class="">02 Februari 2022</span>
-                            </li>
-                            <li>
-                                <div class="score"><strong>520</strong></div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="item" data-aos="fade-right" data-aos-delay="1050">
-                    <div class="strip">
-                        <figure>
-                            {{-- <span class="ribbon off">Kategori</span> --}}
-                            <img src="{{ asset('yes/img/bersyukur.jpg') }}"
-                                data-src="{{ asset('yes/img/bersyukur.jpg') }}" class="owl-lazy" alt="" width="460"
-                                height="310">
-                            <a href="#" class="strip_info">
-                                <small>Hikmah</small>
-                            </a>
-                        </figure>
-                        <ul>
-                            <li><span class="">02 Februari 2022</span>
-                            </li>
-                            <li>
-                                <div class="score"><strong>520</strong></div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                    <?php $i++; ?>
+                @endforeach
             </div>
             <hr>
             <div class="main_title">
@@ -326,18 +261,21 @@
                 <a href="#" type="button" class="btn btn_1">MORE</a>
             </div>
             <div class="row">
+                @foreach ($beritas as $item)
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
                     <article class="blog">
                         <figure>
-                            <a href="#"><img src="{{ asset('yes/img/berita2.jpeg') }}" alt="">
+                            <a href="#"><img src="{{ asset('img_thumbnail/' . $item->thumbnail) }}" alt="">
                                 <div class="preview"><span>Read more</span></div>
                             </a>
                         </figure>
                         <div class="post_info">
-                            <small>Category - 20 Nov. 2017</small>
-                            <h2><a href="#">Ea exerci option hendrerit</a></h2>
-                            <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi, in eos quod
-                                omnes epicurei, ex veri qualisque scriptorem mei.</p>
+                            @foreach ($item->kategoriposting as $value)
+                            <small>{{$value->name}} </small>
+                            @endforeach
+                            <small>- 20 Nov. 2017</small>
+                            <h2><a href="#">{{$item->judul}}</a></h2>
+                            <p>{{ substr(strip_tags($item->deskripsi),0,100) }} [...]</p>
                             <ul>
                                 <div>
                                     <button class="btn btn_1" style="border-radius: 20px">Baca Selengkapnya</button>
@@ -347,63 +285,19 @@
                     </article>
                     <!-- /article -->
                 </div>
-                <!-- /col -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                    <article class="blog">
-                        <figure>
-                            <a href="#"><img src="{{ asset('yes/img/lazy-placeholder-600-400.png') }}" alt="">
-                                <div class="preview"><span>Read more</span></div>
-                            </a>
-                        </figure>
-                        <div class="post_info">
-                            <small>Category - 20 Nov. 2017</small>
-                            <h2><a href="blog-post.html">At usu sale dolorum offendit</a></h2>
-                            <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi, in eos quod
-                                omnes epicurei, ex veri qualisque scriptorem mei.</p>
-                            <ul>
-                                <div>
-                                    <button class="btn btn_1" style="border-radius: 20px">Baca Selengkapnya</button>
-                                </div>
-                            </ul>
-                        </div>
-                    </article>
-                    <!-- /article -->
-                </div>
-                <!-- /col -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="450">
-                    <article class="blog">
-                        <figure>
-                            <a href="#"><img src="{{ asset('yes/img/lazy-placeholder-600-400.png') }}" alt="">
-                                <div class="preview"><span>Read more</span></div>
-                            </a>
-                        </figure>
-                        <div class="post_info">
-                            <small>Category - 20 Nov. 2017</small>
-                            <h2><a href="blog-post.html">Iusto nominavi petentium in</a></h2>
-                            <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi, in eos quod
-                                omnes epicurei, ex veri qualisque scriptorem mei.</p>
-                            <ul>
-                                <div>
-                                    <button class="btn btn_1" style="border-radius: 20px">Baca Selengkapnya</button>
-                                </div>
-                            </ul>
-                        </div>
-                    </article>
-                    <!-- /article -->
-                </div>
+                @endforeach
             </div>
             <!-- /row -->
             <hr id="artikel">
-            <div class="banner lazy" data-aos="fade-up" data-aos-delay="300" 
-                data-was-processed="true" style="background-color: #3f5d6a;"
-                >
+            <div class="banner lazy" data-aos="fade-up" data-aos-delay="300" data-was-processed="true"
+                style="background-color: #3f5d6a;">
                 <div class="wrapper d-flex align-items-center opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.3)"
-                    style="background-color: rgba(0, 0, 0, 0.3); " >
+                    style="background-color: rgba(0, 0, 0, 0.3); ">
                     <div>
                         <small>PRODUCT</small>
                         <h3>PRODUCT HIGH LIGHT</h3>
-                        <span >Berikut adalah beberapa product yang mensupport pembelajaran program-program kami</span>
-                        <br><br><a href="grid-listing-filterscol.html" class="btn_1" >Semua Product</a>
+                        <span>Berikut adalah beberapa product yang mensupport pembelajaran program-program kami</span>
+                        <br><br><a href="grid-listing-filterscol.html" class="btn_1">Semua Product</a>
                     </div>
                 </div>
                 <!-- /wrapper -->
@@ -554,7 +448,7 @@
                         <span><em></em></span>
                         <h2>-</h2>
                     </div>
-                    
+
                 </div>
                 <!--/container-->
             </div>
@@ -678,9 +572,34 @@
                     </ul>
                 </div>
             </div>
-
         </div>
         <!-- /container -->
 
     </main>
+@endsection
+
+@section('script')
+    {{-- <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: '/',
+                dataType: 'json',
+                delay: 250,
+                success: function(response) {
+                    console.log(response.artikel);
+                    return {
+                        results: $.map(response.artikel, function(item) {
+                            $("#zona-artikel").prepend(
+                                '<div class="item" data-aos="fade-right" data-aos-delay="150"><div class="strip"><figure><img src="img_thumbnail/' +
+                                item.thumbnail + '" data-src="img_thumbnail/' + item
+                                .thumbnail +
+                                '" class="owl-lazy"alt="" width="460" height="310"><a href="/post/contoh" class="strip_info"></a></figure></div></div>'
+                                );
+                        })
+                    };
+                },
+                cache: true
+            })
+        })
+    </script> --}}
 @endsection

@@ -15,7 +15,8 @@ class Posting extends Model
         'penulisposting_id',
         'judul',
         'deskripsi',
-        'thumbnail'
+        'thumbnail',
+        'slug'
 
     ];
 

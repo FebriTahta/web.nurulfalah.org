@@ -11,6 +11,7 @@ class Kategoriposting extends Model
     protected $fillable = [
         
         'name',
+        'slug',
 
     ];
 

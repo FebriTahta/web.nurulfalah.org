@@ -12,6 +12,7 @@ class Sumberposting extends Model
     protected $fillable = [
         
         'name',
+        'slug',
 
     ];
 

@@ -8,16 +8,18 @@ use App\Models\Jenisposting;
 use App\Models\Penulisposting;
 use App\Models\Imageposting;
 use Validator;
+use Illuminate\Support\Str;
 use DataTables;
 use Image;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-    public function post_detail($contoh)
+    public function post_detail($jenisposting_slug, $posting_slug)
     {
-        
-        return view('berita_artikel.post');
+        $post = Posting::where('slug',$posting_slug)->first();
+        return view('berita_artikel.post',compact('post'));
+
     }
 
     // BE
@@ -30,8 +32,28 @@ class PostController extends Controller
         return view('backend.post',compact('sumber','penulis','kategori','jenis'));
     }
 
+    public function backend_posting_edit($posting_slug)
+    {
+        $sumber     = Sumberposting::all();
+        $penulis    = Penulisposting::all();
+        $kategori   = Kategoriposting::all();
+        $jenis      = Jenisposting::all();
+        $data = Posting::where('slug',$posting_slug)->first();
+        return view('backend.post_edit',compact('data','sumber','penulis','kategori','jenis'));
+    }
+
     public function backend_remove_posting(Request $request)
     {
+        $data2= Imageposting::where('posting_id', $request->id)->get();
+        if ($data2->count() > 0) {
+            # code...
+            foreach ($data2 as $key => $value) {
+                # code...
+                unlink('img_posting/'.$value->img);
+            }
+            Imageposting::where('posting_id', $request->id)->delete();
+        }
+
         $data = Posting::find($request->id)->delete();
         unlink('img_thumbnail/'.$request->thumbnail);
             return response()->json(
@@ -72,7 +94,7 @@ class PostController extends Controller
                     }
                 })
                 ->addColumn('action', function($data){
-                    $actionBtn = ' <button data-id="'.$data->id.'" data-name="'.$data->name.'" data-toggle="modal" data-target="#modaledit" class="delete btn btn-info btn-sm"><i class="text-white fa fa-pencil"></i></button>';
+                    $actionBtn = ' <a href="/admin/edit-posting/'.$data->slug.'" data-id="'.$data->id.'" data-name="'.$data->name.'" class="delete btn btn-info btn-sm"><i class="text-white fa fa-pencil"></i></a>';
                     $actionBtn.= ' <a data-target="#modaldel" data-id="'.$data->id.'" data-thumbnail="'.$data->thumbnail.'" data-toggle="modal" href="javascript:void(0)" class="delete btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>';
                     return $actionBtn;
                 })
@@ -85,7 +107,8 @@ class PostController extends Controller
 
     public function cek(Request $request)
     {
-        return $request->imageposting;
+        
+        return response()->json(Posting::all());
     }
 
     
@@ -98,7 +121,8 @@ class PostController extends Controller
             'sumberposting_id'  => 'required',
             'penulisposting_id' => 'required',
             'deskripsi'         => 'required',
-            'thumbnail'         => 'required|image|mimes:jpeg,jpg,png,gif',
+            'thumbnail'         => 'image|mimes:jpeg,jpg,png,gif',
+            'imageposting.*'    => 'image|mimes:jpeg,jpg,png,gif'
         ]);
 
         if ($validator->fails()) {
@@ -110,44 +134,66 @@ class PostController extends Controller
             ]);
 
         }else {
-            $filename   = time().'.'.$request->thumbnail->getClientOriginalExtension();
-            $request->file('thumbnail')->move('img_thumbnail/',$filename);
-            $data       = Posting::updateOrCreate(
-                [
-                    'id'=>$request->id
-                ],
-                [
-                    'judul'=>$request->judul,
-                    'jenisposting_id'=>$request->jenisposting_id,
-                    'sumberposting_id'=>$request->sumberposting_id,
-                    'penulisposting_id'=>$request->penulisposting_id,
-                    'deskripsi'=>$request->deskripsi,
-                    'thumbnail'=>$filename,
-                ]
-            );
+            if ($request->thumbnail !== null) {
+                # code...
+                $filename   = time().'.'.$request->thumbnail->getClientOriginalExtension();
+                $request->file('thumbnail')->move('img_thumbnail/',$filename);
+                $data       = Posting::updateOrCreate(
+                    [
+                        'id'=>$request->id
+                    ],
+                    [
+                        'judul'=>$request->judul,
+                        'slug' => Str::slug($request->judul),
+                        'jenisposting_id'=>$request->jenisposting_id,
+                        'sumberposting_id'=>$request->sumberposting_id,
+                        'penulisposting_id'=>$request->penulisposting_id,
+                        'deskripsi'=>$request->deskripsi,
+                        'thumbnail'=>$filename,
+                    ]
+                );
+            }else {
+                # code...
+                $data       = Posting::updateOrCreate(
+                    [
+                        'id'=>$request->id
+                    ],
+                    [
+                        'judul'=>$request->judul,
+                        'slug' => Str::slug($request->judul),
+                        'jenisposting_id'=>$request->jenisposting_id,
+                        'sumberposting_id'=>$request->sumberposting_id,
+                        'penulisposting_id'=>$request->penulisposting_id,
+                        'deskripsi'=>$request->deskripsi,
+                    ]
+                );
+            }
+            
 
             foreach ($request->kategori_id as $key => $value) {
                 # code...
                 $kategori = Kategoriposting::find($value);
-                $data->kategoriposting()->attach($kategori);
+                $data->kategoriposting()->syncWithoutDetaching($kategori);
             }
 
             // image posting yang lebih dari 1
-            foreach ($request->imageposting as $key => $value) {
+            if ($request->hasfile('imageposting')) {
                 # code...
-                $filename2   = time().'.'.$value->getClientOriginalExtension();
-                $value->move('img_posting/',$filename2);
-                $imagepost = Imageposting::updateOrCreate(
-                    [
-                        'id' => $request->id
-                    ],
-                    [
-                        'posting_id'=>$data->id,
-                        'img'=>$value
-                    ]
-                );
+                foreach ($request->file('imageposting') as $key => $items) {
+                    # code...
+                    $imgname   = time().$key.'.'.$items->getClientOriginalExtension();
+                    $items->move('img_posting/',$imgname);
+                    $imagepost = Imageposting::updateOrCreate(
+                        [
+                            'id' => $request->id
+                        ],
+                        [
+                            'posting_id'=>$data->id,
+                            'img'=>$imgname
+                        ]
+                    );
+                }
             }
-
             return response()->json(
                 [
                   'status'  => 200,
@@ -198,7 +244,8 @@ class PostController extends Controller
                     'id'=>$request->id
                 ],
                 [
-                    'name'=>$request->name
+                    'name'=>$request->name,
+                    'slug' => Str::slug($request->name),
                 ]
             );
 
@@ -280,7 +327,8 @@ class PostController extends Controller
                     'id'=>$request->id
                 ],
                 [
-                    'name'=>$request->name
+                    'name'=>$request->name,
+                    'slug' => Str::slug($request->name),
                 ]
             );
 
@@ -374,7 +422,8 @@ class PostController extends Controller
                     'id'=>$request->id
                 ],
                 [
-                    'name'=>$request->name
+                    'name'=>$request->name,
+                    'slug' => Str::slug($request->name),
                 ]
             );
 
@@ -468,7 +517,9 @@ class PostController extends Controller
                     'id'=>$request->id
                 ],
                 [
-                    'name'=>$request->name
+                    'name'=>$request->name,
+                    'slug' => Str::slug($request->name),
+                    
                 ]
             );
 

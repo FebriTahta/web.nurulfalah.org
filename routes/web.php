@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\landingController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,15 +14,20 @@ use App\Http\Controllers\PostController;
 |
 */
 
-Route::get('/', function () {
-    // return view('welcome');
-    // return view('landing.index');
-    // return view('layouts.raw_backend');
-    // return view('backend.post');
-    return redirect('/admin/posting');
-});
+// Route::get('/', function () {
+//     // return view('welcome');
+//     // return view('landing.index');
+//     // return view('layouts.raw_backend');
+//     // return view('backend.post');
+//     // return redirect('/admin/posting');
+// });
+// CEK ERROR
+Route::get('/cek',[PostController::class,'cek'])->name('cek');
 
-Route::get('/post/{contoh}',[PostController::class,'post_detail'])->name('post.detail');
+// FE LANDING
+Route::get('/',[LandingController::class,'landing'])->name('landing');
+
+Route::get('/post/{jenisposting_slug}/{posting_slug}',[PostController::class,'post_detail'])->name('post.detail');
 
 // BE
 // POSTING
@@ -29,8 +35,7 @@ Route::get('/admin/posting',[PostController::class,'backend_posting'])->name('pa
 Route::post('/admin/add-posting',[PostController::class,'backend_add_posting'])->name('add.posting.backend');
 Route::post('/admin/remove-posting',[PostController::class,'backend_remove_posting'])->name('remove.posting.backend');
 Route::get('/admin/list-posting',[PostController::class,'backend_list_posting'])->name('page_list.posting.backend');
-
-Route::post('/cek',[PostController::class,'cek'])->name('cek');
+Route::get('/admin/edit-posting/{posting_slug}',[PostController::class,'backend_posting_edit']);
 
 // KATEGORI
 Route::get('/admin/kategori',[PostController::class,'backend_kategori'])->name('page.kategori.backend');

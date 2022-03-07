@@ -11,6 +11,7 @@ class Penulisposting extends Model
     protected $fillable = [
         
         'name',
+        'slug',
 
     ];
 

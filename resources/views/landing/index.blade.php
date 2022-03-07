@@ -57,7 +57,7 @@
             <div class="row bidang">
                 <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="300">
                     <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
-                        <img src="{{ asset('yes/img/menu-thumb-placeholder.jpg') }}" style="border-radius: 20px" alt="">
+                        <img src="{{ asset('TILAWATI.png') }}" style="border-radius: 20px" alt="">
                         <p style="margin-top: 10px; color: rgb(54, 211, 145)">TILAWATI</p>
                     </div>
                     <div class="form-group bidang__name">
@@ -67,7 +67,7 @@
                 </div>
                 <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="600">
                     <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
-                        <img src="{{ asset('yes/img/menu-thumb-placeholder.jpg') }}" style="border-radius: 20px" alt="">
+                        <img src="{{ asset('DGTKI.png') }}" style="border-radius: 20px" alt="">
                         <p style="margin-top: 10px; color: rgb(54, 211, 145)">DGTKI</p>
                     </div>
                     <div class="form-group bidang__name">
@@ -77,8 +77,8 @@
                 </div>
                 <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="900">
                     <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
-                        <img src="{{ asset('yes/img/menu-thumb-placeholder.jpg') }}" style="border-radius: 20px" alt="">
-                        <p style="margin-top: 10px; color: rgb(54, 211, 145)">TAHFIDZ</p>
+                        <img src="{{ asset('LPQ.png') }}" style="border-radius: 20px" alt="">
+                        <p style="margin-top: 10px; color: rgb(54, 211, 145)">LPQ</p>
                     </div>
                     <div class="form-group bidang__name">
                         <h5>BIDANG</h5>
@@ -87,7 +87,7 @@
                 </div>
                 <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="1200">
                     <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
-                        <img src="{{ asset('yes/img/menu-thumb-placeholder.jpg') }}" style="border-radius: 20px" alt="">
+                        <img src="{{ asset('LAZIS.png') }}" style="border-radius: 20px" alt="">
                         <p style="margin-top: 10px; color: rgb(54, 211, 145)">LAZIZ</p>
                     </div>
                     <div class="form-group bidang__name">
@@ -265,7 +265,7 @@
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
                     <article class="blog">
                         <figure>
-                            <a href="#"><img src="{{ asset('img_thumbnail/' . $item->thumbnail) }}" alt="">
+                            <a href="/post/{{$item->jenisposting->slug}}/{{$item->slug}}"><img src="{{ asset('img_thumbnail/' . $item->thumbnail) }}" alt="">
                                 <div class="preview"><span>Read more</span></div>
                             </a>
                         </figure>
@@ -278,7 +278,7 @@
                             <p>{{ substr(strip_tags($item->deskripsi),0,100) }} [...]</p>
                             <ul>
                                 <div>
-                                    <button class="btn btn_1" style="border-radius: 20px">Baca Selengkapnya</button>
+                                    <a href="/post/{{$item->jenisposting->slug}}/{{$item->slug}}" class="btn btn_1" style="border-radius: 20px">Baca Selengkapnya</a>
                                 </div>
                             </ul>
                         </div>

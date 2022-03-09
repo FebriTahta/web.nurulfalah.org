@@ -11,6 +11,8 @@ use Validator;
 use Illuminate\Support\Str;
 use DataTables;
 use Image;
+use File;
+use App\Models\Social;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -103,12 +105,6 @@ class PostController extends Controller
         };
 
         return view('backend.list_post');
-    }
-
-    public function cek(Request $request)
-    {
-        
-        return response()->json(Posting::all());
     }
 
     
@@ -572,4 +568,26 @@ class PostController extends Controller
         }
 
     }
+
+    public function cek(Request $request)
+    {
+        
+        // $path = public_path('img_socmed/'.$request->img);
+        // $isExists = File::exists($path);
+        // return $request->img;
+        $gambar     = Social::find($request->id);
+        $path       = public_path('img_socmed/'.$request->img);
+        $isExists   = file_exists($path);
+        
+        if ($isExists == true) {
+            # code...
+            # biarkan gambar yang udah ada
+            return $gambar->img.'<br>'.'ada maka biarkan gambar yang udah ada';
+        }else {
+            # code...
+            # hapus gambar ganti ke gambar baru
+            return $gambar->img.'<br>'.'tak ada maka hapus gambar ganti ke gambar baru';
+        }
+    }
 }
+

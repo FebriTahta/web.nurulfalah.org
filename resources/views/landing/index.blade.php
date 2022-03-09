@@ -43,7 +43,7 @@
                     </div>
                     <div class="col-xl-4 col-lg-5 col-md-5">
                         <div class="search_bar_list">
-                            <input type="text" class="form-control" placeholder="Kegiatan, Bidang, Cabang, ...">
+                            <input type="text" class="form-control" placeholder="Cari disini ...">
                             <button type="submit"><i class="icon_search"></i></button>
                         </div>
                     </div>
@@ -54,15 +54,15 @@
         <!-- /page_header -->
 
         <div class="container" style="margin-top: 20px">
-            <div class="row bidang">
-                <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="300">
+            {{-- <div class="row bidang" >
+                <div class="col-lg-3 col-3 bidang__card" style="text-align: center" data-aos="fade-up" data-aos-delay="300">
                     <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
                         <img src="{{ asset('TILAWATI.png') }}" style="border-radius: 20px" alt="">
                         <p style="margin-top: 10px; color: rgb(54, 211, 145)">TILAWATI</p>
                     </div>
-                    <div class="form-group bidang__name">
+                    <div class="form-group bidang__name d-none">
                         <h5>BIDANG</h5>
-                        <p>TILAWATI</p>
+                        <p>DGTKI</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="600">
@@ -70,7 +70,7 @@
                         <img src="{{ asset('DGTKI.png') }}" style="border-radius: 20px" alt="">
                         <p style="margin-top: 10px; color: rgb(54, 211, 145)">DGTKI</p>
                     </div>
-                    <div class="form-group bidang__name">
+                    <div class="form-group bidang__name d-none">
                         <h5>BIDANG</h5>
                         <p>DGTKI</p>
                     </div>
@@ -80,7 +80,7 @@
                         <img src="{{ asset('LPQ.png') }}" style="border-radius: 20px" alt="">
                         <p style="margin-top: 10px; color: rgb(54, 211, 145)">LPQ</p>
                     </div>
-                    <div class="form-group bidang__name">
+                    <div class="form-group bidang__name d-none">
                         <h5>BIDANG</h5>
                         <p>TAHFIDZ</p>
                     </div>
@@ -90,22 +90,22 @@
                         <img src="{{ asset('LAZIS.png') }}" style="border-radius: 20px" alt="">
                         <p style="margin-top: 10px; color: rgb(54, 211, 145)">LAZIZ</p>
                     </div>
-                    <div class="form-group bidang__name">
+                    <div class="form-group bidang__name d-none">
                         <h5>BIDANG</h5>
                         <p>LAZIZ</p>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
             <div class="main_title">
-                <h2 data-aos="fade-right" data-aos-delay="150">AGENDA</h2>
-                <p data-aos="fade-right" data-aos-delay="450">Daftar Kegiatan</p>
+                <h2 data-aos="fade-right" data-aos-delay="150">MEDIA</h2>
+                <p data-aos="fade-right" data-aos-delay="450">Follow Our Media</p>
                 <span data-aos="fade-right" data-aos-delay="750"><em></em></span>
             </div>
             <!-- /main_title -->
 
             <div class="owl-carousel owl-theme categories_carousel">
-                <div class="item_version_2" data-aos="fade-left" data-aos-delay="1050">
+                {{-- <div class="item_version_2" data-aos="fade-left" data-aos-delay="1050">
                     <a href="grid-listing-filterscol.html">
                         <figure>
                             <span>01</span>
@@ -118,77 +118,21 @@
                             </div>
                         </figure>
                     </a>
-                </div>
-                <div class="item_version_2" data-aos="fade-left" data-aos-delay="1350">
-                    <a href="grid-listing-filterscol.html">
+                </div> --}}
+                <?php $z = 300; $y = 1;?>
+                @foreach ($social as $key=>$item)
+                <div class="item_version_2" data-aos="fade-left" data-aos-delay="{{$z*$y}}">
+                    <a href="{{$item->link}}" target="_blank">
                         <figure>
-                            <span>01</span>
-                            <img src="{{ asset('yes/img/home_cat_placeholder.jpg') }}"
-                                data-src="{{ asset('yes/img/home_cat_placeholder.jpg') }}" alt="" class="owl-lazy"
+                            <span>{{ $key+1 }} </span>
+                            <img src="{{ asset('img_socmed/'.$item->img) }}"
+                                data-src="{{ asset('img_socmed/'.$item->img) }}" alt="" class="owl-lazy"
                                 width="350" height="450">
-                            <div class="info">
-                                <h3>Event. 1</h3>
-                                <small>-</small>
-                            </div>
                         </figure>
                     </a>
                 </div>
-                <div class="item_version_2" data-aos="fade-left" data-aos-delay="1650">
-                    <a href="grid-listing-filterscol.html">
-                        <figure>
-                            <span>01</span>
-                            <img src="{{ asset('yes/img/home_cat_placeholder.jpg') }}"
-                                data-src="{{ asset('yes/img/home_cat_placeholder.jpg') }}" alt="" class="owl-lazy"
-                                width="350" height="450">
-                            <div class="info">
-                                <h3>Event. 1</h3>
-                                <small>-</small>
-                            </div>
-                        </figure>
-                    </a>
-                </div>
-                <div class="item_version_2" data-aos="fade-left" data-aos-delay="1950">
-                    <a href="grid-listing-filterscol.html">
-                        <figure>
-                            <span>01</span>
-                            <img src="{{ asset('yes/img/home_cat_placeholder.jpg') }}"
-                                data-src="{{ asset('yes/img/home_cat_placeholder.jpg') }}" alt="" class="owl-lazy"
-                                width="350" height="450">
-                            <div class="info">
-                                <h3>Event. 1</h3>
-                                <small>-</small>
-                            </div>
-                        </figure>
-                    </a>
-                </div>
-                <div class="item_version_2" data-aos="fade-left" data-aos-delay="2250">
-                    <a href="grid-listing-filterscol.html">
-                        <figure>
-                            <span>01</span>
-                            <img src="{{ asset('yes/img/home_cat_placeholder.jpg') }}"
-                                data-src="{{ asset('yes/img/home_cat_placeholder.jpg') }}" alt="" class="owl-lazy"
-                                width="350" height="450">
-                            <div class="info">
-                                <h3>Event. 1</h3>
-                                <small>-</small>
-                            </div>
-                        </figure>
-                    </a>
-                </div>
-                <div class="item_version_2" data-aos="fade-left" data-aos-delay="2550">
-                    <a href="grid-listing-filterscol.html">
-                        <figure>
-                            <span>01</span>
-                            <img src="{{ asset('yes/img/home_cat_placeholder.jpg') }}"
-                                data-src="{{ asset('yes/img/home_cat_placeholder.jpg') }}" alt="" class="owl-lazy"
-                                width="350" height="450">
-                            <div class="info">
-                                <h3>Event. 1</h3>
-                                <small>-</small>
-                            </div>
-                        </figure>
-                    </a>
-                </div>
+                <?php $y++;?>
+                @endforeach
             </div>
             <!-- /carousel -->
             <div class="baris">
@@ -238,9 +182,9 @@
             </div>
             <div class="owl-carousel owl-theme carousel_4" id="zona-artikel">
                 <!--ZONA ARTIKEL-->
-                <?php $i = 300; ?>
+                <?php $i = 300; $j = 1;?>
                 @foreach ($artikels as $item)
-                    <div class="item" data-aos="fade-right" data-aos-delay="{{ $i }}">
+                    <div class="item" data-aos="fade-right" data-aos-delay="{{ $i*$j }}">
                         <div class="strip">
                             <figure>
                                 <img src="{{ asset('img_thumbnail/' . $item->thumbnail) }}"
@@ -250,7 +194,7 @@
                             </figure>
                         </div>
                     </div>
-                    <?php $i++; ?>
+                    <?php $j++; ?>
                 @endforeach
             </div>
             <hr>
@@ -258,7 +202,7 @@
                 <span data-aos="fade-right" data-aos-delay="150"><em></em></span>
                 <h2 data-aos="fade-right" data-aos-delay="300">BERITA</h2>
                 <p data-aos="fade-right" data-aos-delay="450">Kabar Terkini Nurul Falah</p>
-                <a href="#" type="button" class="btn btn_1">MORE</a>
+                <a href="/post/daftar-berita" type="button" class="btn btn_1">MORE</a>
             </div>
             <div class="row">
                 @foreach ($beritas as $item)
@@ -273,8 +217,8 @@
                             @foreach ($item->kategoriposting as $value)
                             <small>{{$value->name}} </small>
                             @endforeach
-                            <small>- 20 Nov. 2017</small>
-                            <h2><a href="#">{{$item->judul}}</a></h2>
+                            <small>- {{Carbon\Carbon::parse($item->created_at)->isoFormat('D MMMM Y');}}</small>
+                            <h2><a href="/post/{{$item->jenisposting->slug}}/{{$item->slug}}">{{$item->judul}}</a></h2>
                             <p>{{ substr(strip_tags($item->deskripsi),0,100) }} [...]</p>
                             <ul>
                                 <div>

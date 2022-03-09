@@ -2,18 +2,13 @@
     <div class="left_sidebar">
         <nav class="sidebar">
             <div class="user-info">
-                <div class="image"><a href="javascript:void(0);"><img src="{{asset('assets/images/user.png')}}" alt="User"></a></div>
-                <div class="detail mt-3">
-                    <h5 class="mb-0">Mike Thomas</h5>
+                <div class="image"><a href="javascript:void(0);"><img src="{{asset('nf.png')}}" alt="User"></a></div>
+                <div class="detail mt-3" style="margin-bottom: 20px">
+                    <h5 class="mb-0">Nurul Falah Management Content</h5>
                     <small>Admin</small>
                 </div>
-                <div class="social">
-                    <a href="javascript:void(0);" title="facebook"><i class="ti-twitter-alt"></i></a>
-                    <a href="javascript:void(0);" title="twitter"><i class="ti-linkedin"></i></a>
-                    <a href="javascript:void(0);" title="instagram"><i class="ti-facebook"></i></a>
-                </div>
             </div>
-            <ul id="main-menu" class="metismenu">
+            <ul id="main-menu" class="metismenu" >
                 <li class="g_heading">Main</li>
                 <li><a href="index.html"><i class="ti-home"></i><span>Dashboard</span></a></li>
                 <li class="g_heading">Post Artikel & Berita</li>
@@ -25,6 +20,13 @@
                         <li><a href="{{route('page.sumber.backend')}}">Sumber</a></li>
                         <li><a href="{{route('page.penulis.backend')}}">Redaksi</a></li>
                         <li><a href="{{route('page.jenis.backend')}}">Jenis</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript:void(0)" class="has-arrow"><i class="fa fa-facebook"></i><span>Media</span></a>
+                    <ul>
+                        <li><a href="{{route('page.media.backend')}}">Daftar Media</a></li>
                     </ul>
                 </li>
                 
@@ -203,7 +205,7 @@
                     <ul class="list-unstyled contact-list">
                         <li class="d-flex align-items-center">
                             <span class="contact-img">
-                                <img src="../assets/images/xs/avatar1.jpg" class="rounded" alt="">
+                                <img src="{{asset('tilawati-blue.png')}}" class="rounded" alt="">
                             </span>
                             <h4 class="contact-name">Vincent Porter <span class="d-block">London UK</span></h4>
                             <div class="action">
@@ -213,7 +215,7 @@
                         </li>
                         <li class="d-flex align-items-center">
                             <span class="contact-img">
-                                <img src="../assets/images/xs/avatar2.jpg" class="rounded" alt="">
+                                <img src="{{asset('tilawati-blue.png')}}" class="rounded" alt="">
                             </span>
                             <h4 class="contact-name">Mike Thomas <span class="d-block">London UK</span></h4>
                             <div class="action">
@@ -263,7 +265,7 @@
                         </li>
                         <li class="d-flex align-items-center">
                             <span class="contact-img">
-                                <img src="../assets/images/xs/avatar7.jpg" class="rounded" alt="">
+                                <img src="{{asset('tilawati-blue.png')}}" class="rounded" alt="">
                             </span>
                             <h4 class="contact-name">Mike Thomas <span class="d-block">New Delhi IND</span></h4>
                             <div class="action">

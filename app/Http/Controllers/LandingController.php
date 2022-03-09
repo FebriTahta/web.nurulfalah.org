@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Posting;
+use App\Models\Social;
 use Illuminate\Http\Request;
 
 class LandingController extends Controller
@@ -16,12 +17,13 @@ class LandingController extends Controller
         // $berita = Posting::with(['jenisposting' => function($q) {
         //     $q->where('name', 'berita');
         // }])->paginate(6);
-        $artikels = Posting::whereHas('jenisposting', function($q) {
+        $artikels = Posting::orderBy('id','desc')->whereHas('jenisposting', function($q) {
             $q->where('name', 'artikel');
         })->limit(4)->get();
-        $beritas = Posting::whereHas('jenisposting', function($q) {
+        $beritas = Posting::orderBy('id','desc')->whereHas('jenisposting', function($q) {
             $q->where('name', 'berita');
         })->limit(3)->get();
-        return view('landing.index',compact('artikels','beritas'));
+        $social  = Social::all();
+        return view('landing.index',compact('artikels','beritas','social'));
     }
 }

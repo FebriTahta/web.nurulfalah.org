@@ -103,7 +103,7 @@
 </head>
 
 <body>
-    @if (Request::routeIs('post.detail'))
+    @if (Request::routeIs('post.detail') || Request::routeIs('post.daftar'))
         <header class="header_in clearfix element_to_stick sticky_horizontal">
             <div class="container">
                 <div id="logo">

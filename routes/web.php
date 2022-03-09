@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\MediaController;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\ListController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,12 +24,18 @@ use App\Http\Controllers\LandingController;
 //     // return redirect('/admin/posting');
 // });
 // CEK ERROR
-Route::get('/cek',[PostController::class,'cek'])->name('cek');
+Route::post('/cek',[PostController::class,'cek'])->name('cek');
 
 // FE LANDING
 Route::get('/',[LandingController::class,'landing'])->name('landing');
 
 Route::get('/post/{jenisposting_slug}/{posting_slug}',[PostController::class,'post_detail'])->name('post.detail');
+Route::get('/post/daftar-berita',[ListController::class,'post_daftar'])->name('post.daftar');
+ 
+
+
+
+
 
 // BE
 // POSTING
@@ -36,7 +44,6 @@ Route::post('/admin/add-posting',[PostController::class,'backend_add_posting'])-
 Route::post('/admin/remove-posting',[PostController::class,'backend_remove_posting'])->name('remove.posting.backend');
 Route::get('/admin/list-posting',[PostController::class,'backend_list_posting'])->name('page_list.posting.backend');
 Route::get('/admin/edit-posting/{posting_slug}',[PostController::class,'backend_posting_edit']);
-
 // KATEGORI
 Route::get('/admin/kategori',[PostController::class,'backend_kategori'])->name('page.kategori.backend');
 Route::post('/admin/add-kategori',[PostController::class,'backend_add_kategori'])->name('add.kategori.backend');
@@ -53,3 +60,8 @@ Route::post('/admin/remove-penulis',[PostController::class,'backend_remove_penul
 Route::get('/admin/jenis',[PostController::class,'backend_jenis'])->name('page.jenis.backend');
 Route::post('/admin/add-jenis',[PostController::class,'backend_add_jenis'])->name('add.jenis.backend');
 Route::post('/admin/remove-jenis',[PostController::class,'backend_remove_jenis'])->name('remove.jenis.backend');
+// MEDIA
+Route::get('/admin/media',[MediaController::class,'backend_media'])->name('page.media.backend');
+Route::post('/admin/add-media',[MediaController::class,'backend_add_media'])->name('add.media.backend');
+Route::post('/admin/update-media',[MediaController::class,'backend_update_media'])->name('update.media.backend');
+Route::post('/admin/remove-media',[MediaController::class,'backend_remove_media'])->name('remove.media.backend');

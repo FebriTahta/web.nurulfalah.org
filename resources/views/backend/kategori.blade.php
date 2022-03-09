@@ -33,7 +33,8 @@
                             <h2>TABEL KATEGORI</h2>
                         </div>
                         <div class="body">
-                            <table id="example"
+                            <div class="table-responsive">
+                                <table id="example"
                                 class="table table-bordered table-striped table-hover js-basic-example dataTable">
                                 <thead>
                                     <tr>
@@ -53,6 +54,7 @@
                                     </tr>
                                 </tfoot>
                             </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -130,14 +132,10 @@
     <script src="{{ asset('assets/vendor/jquery-datatable/buttons/buttons.html5.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/jquery-datatable/buttons/buttons.print.min.js') }}"></script>
 
-    <script src="{{ asset('assets/js/theme.js') }}"></script>
+   
     <!-- Custom Js -->
     <script src="{{ asset('assets/js/pages/tables/jquery-datatable.js') }}"></script>
-    <!-- Toast -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+   
     {{-- LOGIC --}}
     <script>
         $(document).ready(function() {
@@ -147,6 +145,7 @@
                 serverSide: true,
                 ajax: "{{ route('page.kategori.backend') }}",
                 columns: [{
+                        "width":10,
                         "data": null,
                         "sortable": false,
                         render: function(data, type, row, meta) {

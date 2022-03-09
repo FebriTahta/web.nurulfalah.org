@@ -166,23 +166,24 @@
                         <div class="widget-title first">
                             <h4>Post serupa</h4>
                         </div>
+                        <?php $jenis = $post->jenisposting_id?>
                         <ul class="comments-list">
                             @foreach ($post->kategoriposting as $item)
                                 @foreach ($item->posting as $items)
                                     <?php $recent = App\Models\Posting::where('id', $items->id)
-                                        ->whereHas('jenisposting', function ($q) {
-                                            $q->where('name', 'artikel');
+                                        ->whereHas('jenisposting', function ($q) use ($jenis) {
+                                            $q->where('id', $jenis);
                                         })
                                         ->limit(3)
                                         ->get(); ?>
                                     @foreach ($recent as $val)
                                         <li>
-                                            <div class="alignleft">
+                                            <div class="alignleft" >
                                                 <a href="#0"><img src="{{ asset('img_thumbnail/' . $val->thumbnail) }}"
                                                         alt=""></a>
                                             </div>
                                             <small>{{ $val->name }}</small>
-                                            <h3><a href="#" title="">{{ $val->judul }}</a></h3>
+                                            <span><a href="#" title="">{{ $val->judul }}</a></span>
                                         </li>
                                     @endforeach
                                 @endforeach

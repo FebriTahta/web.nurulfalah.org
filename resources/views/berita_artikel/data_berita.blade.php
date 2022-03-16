@@ -22,6 +22,5 @@
                 </ul>
             </div>
         </article>
-        <!-- /article -->
     </div>
 @endforeach

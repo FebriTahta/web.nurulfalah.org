@@ -221,8 +221,8 @@ article.blog .post_info ul li:last-child i {
 .alignleft {
   float: left;
   margin: 0 15px 10px 0;
-  width: 100%;
-  height: 220px;
+  width: 50%;
+  height: 100px;
   overflow: hidden;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;

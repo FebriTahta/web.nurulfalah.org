@@ -1,5 +1,10 @@
 @extends('layouts.master')
 @section('head')
+<style>
+
+
+
+</style>
 @endsection
 @section('content')
     <main>
@@ -198,6 +203,57 @@
                 @endforeach
             </div>
             <hr>
+            <div class="jadwal-sholat" style="padding: 2%">
+                <div class="main_title">
+                    <p data-aos="fade-right" data-aos-delay="450">JADWAL SHOLAT</p>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Daerah : </label>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <select name="kabupaten" id="kabupaten_id" class="form-control">
+                                    <option value="">Kabupaten / Kota</option>
+                                    @foreach ($kab_kota as $item)
+                                        <option value="{{$item->id}}">{{$item->lokasi}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for=""></label>
+                    </div>
+                    <div class="col-md-2">
+                        <a style="text-align: left; text-transform: uppercase">SUBUH</a>
+                        <a style="text-align: right" class="float-right">{{$jadwal_sholat['subuh']}} <b>AM</b></a>
+                    </div>
+                    <div class="col-md-2">
+                        <a style="text-align: left; text-transform: uppercase">dzuhur</a>
+                        <a style="text-align: right" class="float-right">{{$jadwal_sholat['dzuhur']}} <b>AM</b></a>
+                    </div>
+                    <div class="col-md-2">
+                        <a style="text-align: left; text-transform: uppercase">ashar</a>
+                        <a style="text-align: right" class="float-right">{{$jadwal_sholat['ashar']}} <b>PM</b></a>
+                    </div>
+                    <div class="col-md-2">
+                        <a style="text-align: left; text-transform: uppercase">maghrib</a>
+                        <a style="text-align: right" class="float-right">{{$jadwal_sholat['maghrib']}} <b>PM</b></a>
+                    </div>
+                    <div class="col-md-2">
+                        <a style="text-align: left; text-transform: uppercase">Isya</a>
+                        <a style="text-align: right" class="float-right">{{$jadwal_sholat['isya']}} <b>PM</b></a>
+                    </div>
+                    <div class="col-md-2">
+                        <a style="text-align: left; text-transform: uppercase">imsak</a>
+                        <a style="text-align: right" class="float-right">{{$jadwal_sholat['imsak']}} <b>AM</b></a>
+                    </div>
+                </div>
+            </div>
+            
+            <br>
+            <br>
             <div class="main_title">
                 <span data-aos="fade-right" data-aos-delay="150"><em></em></span>
                 <h2 data-aos="fade-right" data-aos-delay="300">BERITA</h2>

@@ -31,7 +31,10 @@ Route::get('/',[LandingController::class,'landing'])->name('landing');
 
 Route::get('/post/{jenisposting_slug}/{posting_slug}',[PostController::class,'post_detail'])->name('post.detail');
 Route::get('/post/daftar-berita',[ListController::class,'post_daftar'])->name('post.daftar');
- 
+Route::post('/post/load-more',[ListController::class,'load_more'])->name('post.load_more');
+
+// FE JADWAL SHOLAT
+Route::get('/index-jadwal-sholat',[LandingController::class,'jadwal_sholat'])->name('landing.jadwal_sholat'); 
 
 
 

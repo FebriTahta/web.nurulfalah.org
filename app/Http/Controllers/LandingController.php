@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Posting;
 use App\Models\Social;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
 
@@ -16,11 +17,10 @@ class LandingController extends Controller
         $beritas = Posting::orderBy('id','desc')->whereHas('jenisposting', function($q) {
             $q->where('name', 'berita');
         })->limit(3)->get();
+        $tgl = Carbon::now()->isoFormat('D MMMM Y');
         $social  = Social::all();
-        //JADWAL SHOLAT
-        $data = Http::get('https://api.myquran.com/v1/sholat/jadwal/1638/2022/03/16');
+        $data = Http::get('https://api.myquran.com/v1/sholat/jadwal/1638/'.date('Y').'/'.date('m').'/'.date('d').'');
         $jadwal_sholat = $data['data']['jadwal'];
-        //DAERAH JADWAL SHOLAT
         $kota = Http::get('https://api.myquran.com/v1/sholat/kota/semua')->body();
         $daerah = json_decode($kota);
         $kab_kota = [];
@@ -28,21 +28,34 @@ class LandingController extends Controller
             # code...
             array_push($kab_kota,$value);
         }
-        return view('landing.index',compact('artikels','beritas','social','jadwal_sholat','kab_kota'));
+        return view('landing.index',compact('artikels','beritas','social','jadwal_sholat','kab_kota','tgl'));
     }
 
-    public function jadwal_sholat(Request $request)
+    public function jadwal_sholat($lokasi_id, Request $request)
     {
-        $kota = Http::get('https://api.myquran.com/v1/sholat/kota/semua')->body();
-        $data = Http::get('https://api.myquran.com/v1/sholat/jadwal/1638/2022/03/16');
-        
-        $datas= json_decode($kota);
-        $kab_kota = [];
-        foreach ($datas as $key => $value) {
+        if($request->ajax())
+        {
             # code...
-            array_push($kab_kota,$value);
+            $lokasi = $lokasi_id;
+            $json   = json_decode(file_get_contents('https://api.myquran.com/v1/sholat/kota/id/'.$lokasi.''), true);
+            if ($json['status'] == false) {
+                # code... 
+                return response()->json([
+                    'status'    => 400,
+                    'message'   => 'Lokasi / Daerah Tidak Ditemukan',
+                ]);
+
+            }else {
+                # code...
+                $data   = json_decode(file_get_contents('https://api.myquran.com/v1/sholat/jadwal/'.$lokasi.'/'.date('Y').'/'.date('m').'/'.date('d').''), true);
+                return response()->json(
+                    [
+                    'status'  => 200,
+                    'message' => 'Menampilkan Jadwal Sholat ' . $json['data']['lokasi'],
+                    'jadwal'    => $data['data']
+                    ]
+                );
+            }
         }
-        // return $kab_kota;
-        // return $data['data'];
     }
 }

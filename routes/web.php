@@ -34,11 +34,7 @@ Route::get('/post/daftar-berita',[ListController::class,'post_daftar'])->name('p
 Route::post('/post/load-more',[ListController::class,'load_more'])->name('post.load_more');
 
 // FE JADWAL SHOLAT
-Route::get('/index-jadwal-sholat',[LandingController::class,'jadwal_sholat'])->name('landing.jadwal_sholat'); 
-
-
-
-
+Route::get('/index-jadwal-sholat/{lokasi_id}',[LandingController::class,'jadwal_sholat'])->name('landing.jadwal_sholat'); 
 
 // BE
 // POSTING

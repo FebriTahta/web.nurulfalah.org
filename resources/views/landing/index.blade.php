@@ -407,49 +407,42 @@
                     </div>
                 @endforeach
             </div> --}}
-            <div class="blog-posts">
-                {{-- <div class="row"> --}}
-                    <section class="page-content pt-0">
-                        <div class="container">
-                            <div class="blog-single">
-                                <div class="row">
-                                    <div class="col-md-12" style="margin-top: 70px">
-                                        <h3 class="sub-title" style="color: darkcyan">ARTIKEL TERBARU</h3>
+            <div class="page_header" style="background: transparent" data-aos="fade-up" data-aos-delay="150">
+                <div class="container">
+                    <div class="row">
+                        <h3 class="sub-title" style="color: darkcyan">ARTIKEL</h3>
+                        <div class="owl-carousel owl-theme carousel_4" id="zona-artikel">
+                            <!--ZONA ARTIKEL-->
+                            <?php $i = 300;
+                            $j = 1; ?>
+                            @foreach ($artikels as $item)
+                                <div class="item" data-aos="fade-right" data-aos-delay="{{ $i * $j }}">
+                                    <div class="strip">
+                                        <figure>
+                                            <img src="{{ asset('img_thumbnail/' . $item->thumbnail) }}"
+                                                data-src="{{ asset('img_thumbnail/' . $item->thumbnail) }}"
+                                                class="owl-lazy" alt="" width="460" height="310">
+                                            <a href="/post/{{ $item->jenisposting->slug }}/{{ $item->slug }}"
+                                                class="strip_info"></a>
+                                        </figure>
                                     </div>
                                 </div>
-                                <div class="owl-carousel owl-theme carousel_4" id="zona-artikel">
-                                    <!--ZONA ARTIKEL-->
-                                    <?php $i = 300;
-                                    $j = 1; ?>
-                                    @foreach ($artikels as $item)
-                                        <div class="item" data-aos="fade-right" data-aos-delay="{{ $i * $j }}">
-                                            <div class="strip">
-                                                <figure>
-                                                    <img src="{{ asset('img_thumbnail/' . $item->thumbnail) }}"
-                                                        data-src="{{ asset('img_thumbnail/' . $item->thumbnail) }}"
-                                                        class="owl-lazy" alt="" width="460" height="310">
-                                                    <a href="/post/{{ $item->jenisposting->slug }}/{{ $item->slug }}"
-                                                        class="strip_info"></a>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <?php $j++; ?>
-                                    @endforeach
-                                </div>
-                            </div>
+                                <?php $j++; ?>
+                            @endforeach
                         </div>
-                    </section>
-                {{-- </div> --}}
+                    </div>
+                    <!-- /row -->
+                </div>
             </div>
-
-            <div class="blog-posts">
-                {{-- <div class="row"> --}}
+<hr>
+            {{-- <div class="blog-posts"> --}}
+                <div class="row">
                     <section class="page-content pt-0">
                         <div class="container">
                             <div class="blog-single">
                                 <div class="row">
-                                    <div class="col-md-12" >
-                                        <h3 class="sub-title" style="color: darkcyan">BERITA TERKINI</h3>
+                                    <div class="col-md-12" style="margin-bottom: 10px;margin-top: 10px">
+                                        <h3 class="sub-title" style="color: darkcyan">BERITA TERBARU</h3>
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="sidebar">
@@ -676,8 +669,8 @@
                         </div>
                     </section>
                     <!--page-content end-->
-                {{-- </div> --}}
-            </div>
+                </div>
+            {{-- </div> --}}
             <!-- /row -->
             {{-- <div class="banner lazy" data-aos="fade-up" data-aos-delay="300" data-was-processed="true"
                 style="background-color: #3f5d6a;">

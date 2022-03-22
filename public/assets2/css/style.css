@@ -697,11 +697,11 @@ a:hover {
 }
 .sub-title {
 	color: #070c1f;
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: 700;
 	position: relative;
-	padding-left: 70px;
-	margin-bottom: 30px;
+	padding-left: 86px;
+	margin-bottom: 20px;
 	margin-top: -12px;
 }
 .about-text .sub-title {
@@ -2841,7 +2841,7 @@ select {
 
 
 
-/* HEADER SEARCH MENU
+/* HEADER SEARCH MENU */
 
 .header-search {
     position: fixed;
@@ -2886,7 +2886,7 @@ select {
 }
 .search-close-btn:hover {
 	color: #fff;
-} */
+}
 
 
 

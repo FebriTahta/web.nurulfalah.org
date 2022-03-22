@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('head')
-    <style>
+    {{-- <style>
         .body-jadwal {
 
             display: flex;
@@ -26,6 +26,7 @@
         .box .col-md-2 a {
             color: #fff;
         }
+
         .box .col-md-12 p {
             color: #fff;
         }
@@ -44,10 +45,22 @@
             }
         }
 
-    </style>
+    </style> --}}
+
+    <link rel="icon" href="{{ asset('assets2/images/favicon.png') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets2/css/animate.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets2/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets2/css/all.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets2/css/line-awesome.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets2/css/slick.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets2/css/slick-theme.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets2/css/color.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets2/css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets2/css/responsive.css') }}">
 @endsection
 @section('content')
     <main>
+
         <div id="rev_slider_44_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="mask-showcase"
             data-source="gallery">
             <!-- Start revolution slider 5.4.8 fullscreen mode -->
@@ -83,26 +96,111 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8 col-lg-7 col-md-7 d-none d-md-block">
-                        <h1>Cari informasi seputar Nurul Falah</h1>
-                        <a href="#0">Tentang Nurul Falah</a>
+                        <h1>Pesantren Al Quran Nurul Falah</h1>
+                        {{-- <a href="#0">Profile Kami</a> --}}
                     </div>
-                    <div class="col-xl-4 col-lg-5 col-md-5">
+                    {{-- <div class="col-xl-4 col-lg-5 col-md-5">
                         <div class="search_bar_list">
                             <input type="text" class="form-control" placeholder="Cari disini ...">
                             <button type="submit"><i class="icon_search"></i></button>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
                 <!-- /row -->
             </div>
         </div>
         <!-- /page_header -->
 
-        <div class="container" style="margin-top: 20px">
+        {{-- <div class="block testi-section">
+			<div class="container">
+				<div class="section-title">
+					<h3 class="sub-title">Daftar Bidang</h3>
+				</div><!--section-title end-->
+				<div class="testimonial-section">
+					<div class="testi-carousel">
+						<div class="col-lg-3">
+							<div class="testi-slide">
+								<div class="testi-head">
+                                    <img src="{{ asset('LPQ.png') }}" style="width: 130px" alt="">
+									<div class="user-info">
+										<h3>Bidang LPQ</h3>
+										<span>Lembaga Pendidikan Quran</span>
+                                        <ul class="rating">
+                                            <li><i class="la la-star"></i></li>
+                                            <li><i class="la la-star"></i></li>
+                                            <li><i class="la la-star"></i></li>
+                                            <li><i class="la la-star"></i></li>
+                                            <li><i class="la la-star"></i></li>
+                                        </ul>
+									</div>
+								</div>
+							</div><!--testi-slide end-->
+						</div>
+                        
+						<div class="col-lg-3">
+							<div class="testi-slide">
+								<div class="testi-head">
+									<img src="{{ asset('TLWTI.png') }}" style="width: 130px" alt="">
+									<div class="user-info">
+										<h3>Bidang Tilawati</h3>
+										<span>Diklat & Pengembangan</span>
+                                        <ul class="rating">
+                                            <li><i class="la la-star"></i></li>
+                                            <li><i class="la la-star"></i></li>
+                                            <li><i class="la la-star"></i></li>
+                                            <li><i class="la la-star"></i></li>
+                                            <li><i class="la la-star"></i></li>
+                                        </ul>
+									</div>
+								</div>
+							</div><!--testi-slide end-->
+						</div>
+						<div class="col-lg-3">
+							<div class="testi-slide">
+								<div class="testi-head">
+									<img src="{{ asset('DGTKI.png') }}" style="width: 130px" alt="">
+									<div class="user-info">
+										<h3>Bidang DGTKI</h3>
+										<span>Diklat & Pengembangan</span>
+                                        <ul class="rating">
+                                            <li><i class="la la-star"></i></li>
+                                            <li><i class="la la-star"></i></li>
+                                            <li><i class="la la-star"></i></li>
+                                            <li><i class="la la-star"></i></li>
+                                            <li><i class="la la-star"></i></li>
+                                        </ul>
+									</div>
+								</div>
+							</div><!--testi-slide end-->
+						</div>
+						<div class="col-lg-3">
+							<div class="testi-slide">
+								<div class="testi-head">
+									<img src="{{ asset('LAZIS.png') }}" style="width: 130px" alt="">
+									<div class="user-info">
+										<h3>Bidang LASIZ</h3>
+										<span>Amal & Zakat</span>
+                                        <ul class="rating">
+                                            <li><i class="la la-star"></i></li>
+                                            <li><i class="la la-star"></i></li>
+                                            <li><i class="la la-star"></i></li>
+                                            <li><i class="la la-star"></i></li>
+                                            <li><i class="la la-star"></i></li>
+                                        </ul>
+                                    </div>
+								</div>
+							</div><!--testi-slide end-->
+						</div>
+					</div>
+				</div><!--testimonial-section end-->
+			</div>
+		</div> --}}
+
+        <div class="container">
             {{-- <div class="row bidang" >
                 <div class="col-lg-3 col-3 bidang__card" style="text-align: center" data-aos="fade-up" data-aos-delay="300">
                     <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
-                        <img src="{{ asset('TILAWATI.png') }}" style="border-radius: 20px" alt="">
+                        <img src="{{ asset('TLWTI.png') }}" style="border-radius: 20px; max-width: 100px" alt="">
                         <p style="margin-top: 10px; color: rgb(54, 211, 145)">TILAWATI</p>
                     </div>
                     <div class="form-group bidang__name d-none">
@@ -112,7 +210,7 @@
                 </div>
                 <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="600">
                     <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
-                        <img src="{{ asset('DGTKI.png') }}" style="border-radius: 20px" alt="">
+                        <img src="{{ asset('DGTKI.png') }}" style="border-radius: 20px; max-width: 100px" alt="">
                         <p style="margin-top: 10px; color: rgb(54, 211, 145)">DGTKI</p>
                     </div>
                     <div class="form-group bidang__name d-none">
@@ -122,7 +220,7 @@
                 </div>
                 <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="900">
                     <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
-                        <img src="{{ asset('LPQ.png') }}" style="border-radius: 20px" alt="">
+                        <img src="{{ asset('LPQ.png') }}" style="border-radius: 20px; max-width: 100px" alt="">
                         <p style="margin-top: 10px; color: rgb(54, 211, 145)">LPQ</p>
                     </div>
                     <div class="form-group bidang__name d-none">
@@ -131,8 +229,8 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-3 bidang__card" data-aos="fade-up" data-aos-delay="1200">
-                    <div class="form-group bidang__image" style="margin-top: 10px; text-align: center">
-                        <img src="{{ asset('LAZIS.png') }}" style="border-radius: 20px" alt="">
+                    <div class="form-group bidang__image" style="margin-top: 10px;">
+                        <img src="{{ asset('LAZIS.png') }}" style="border-radius: 20px; max-width: 100px;" alt="">
                         <p style="margin-top: 10px; color: rgb(54, 211, 145)">LAZIZ</p>
                     </div>
                     <div class="form-group bidang__name d-none">
@@ -142,28 +240,14 @@
                 </div>
             </div> --}}
 
-            <div class="main_title">
+            {{-- <div class="main_title">
                 <h2 data-aos="fade-right" data-aos-delay="150">MEDIA</h2>
                 <p data-aos="fade-right" data-aos-delay="450">Follow Our Media</p>
                 <span data-aos="fade-right" data-aos-delay="750"><em></em></span>
-            </div>
+            </div> --}}
             <!-- /main_title -->
 
-            <div class="owl-carousel owl-theme categories_carousel">
-                {{-- <div class="item_version_2" data-aos="fade-left" data-aos-delay="1050">
-                    <a href="grid-listing-filterscol.html">
-                        <figure>
-                            <span>01</span>
-                            <img src="{{ asset('yes/img/home_cat_pizza2.jpg') }}"
-                                data-src="{{ asset('yes/img/home_cat_pizza2.jpg') }}" alt="" class="owl-lazy"
-                                width="350" height="450">
-                            <div class="info">
-                                <h3>Laziz NF</h3>
-                                <small>Tabungamal.id</small>
-                            </div>
-                        </figure>
-                    </a>
-                </div> --}}
+            {{-- <div class="owl-carousel owl-theme categories_carousel">
                 <?php $z = 300;
                 $y = 1; ?>
                 @foreach ($social as $key => $item)
@@ -179,80 +263,69 @@
                     </div>
                     <?php $y++; ?>
                 @endforeach
-            </div>
+            </div> --}}
             <!-- /carousel -->
-            <div class="baris">
-                <hr>
-            </div>
 
-            <hr id="profile">
-            {{-- <div class="wave hero"></div> --}}
-            <div class="box_info_1" style="margin-top: 20px">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="main_title">
-                            <h2 data-aos="fade-right" data-aos-delay="150">TENTANG KAMI</h2>
-                            <span data-aos="fade-right" data-aos-delay="300"><em></em></span>
+            <section class="block pb-0">
+                <div class="about-us-section">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="abt-imgz">
+                                <img class="wow fadeInUp" data-wow-duration="1000ms"
+                                    src="https://via.placeholder.com/309x463" alt="">
+                                <img class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms"
+                                    src="https://via.placeholder.com/327x299" alt="">
+                            </div>
+                            <!--abt-imgz end-->
+                            <div class="abt-txt">
+                                <h4>Video Pesantren Al Qruan Nurul Falah</h4>
+                                <span>Play video</span>
+                                <a href="https://www.youtube.com/watch?v=pNxqh-JCMpw" title=""
+                                    class="play-btn html5lightbox"><i class="fa fa-play"></i></a>
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="600">
-                                <div class="wrapper_img">
-                                    <figure><img src="{{ asset('yes/img/lazy-placeholder-600-400.png') }}"
-                                            data-src="{{ asset('yes/img/lazy-placeholder-600-400.png') }}" alt=""
-                                            class="img-fluid lazy loaded" data-was-processed="true"></figure>
-                                </div>
-                            </div>
-                            <div class="col-lg-1"></div>
-                            <div class="col-lg-5" data-aos="fade-up" data-aos-delay="750">
-                                <h3>PESANTREN AL QUR'AN</h3>
-                                <h2>NURUL FALAH</h2>
-                                <p style="text-align: justify">
-                                    Gagasan awal mendirikan Pesantren Al Quran Nurul Falah adalah inisiatif para aktivis
+                        <div class="col-lg-6">
+                            <div class="about-text" style="text-align: justify">
+                                <h2 class="sub-title" style="color: darkcyan">Pesantren Al Quran Nurul Falah</h2>
+                                <p>Gagasan awal mendirikan Pesantren Al Quran Nurul Falah adalah inisiatif para aktivis
                                     pemuda remaja masjid yang tergerak hatinya karena melihat masih rendahnya pola
-                                    pengajaran Al Quran dibandingkan dengan pendidikan ilmu-ilmu yang lain.
-                                </p>
-                                <a href="#0"><strong>Baca lebih detail &rarr;</strong></a>
+                                    pengajaran Al Quran dibandingkan dengan pendidikan ilmu-ilmu yang lain.</p>
+                                <a href="about.html" title="" class="lnk-default2">Read more <i
+                                        class="la la-arrow-right"></i></a>
                             </div>
+                            <!--about-text end-->
                         </div>
                     </div>
                 </div>
-                <div id="berita"></div>
-            </div>
+                <!--about-us-section end-->
+            </section>
             <!-- /container -->
-            <hr>
-            <div class="main_title">
-                <span><em></em></span>
-                <h2>ARTIKEL</h2>
-                <p>Perkaya Wawasan</p>
-                <a href="#" type="button" class="btn btn-sm btn_1">MORE</a>
-            </div>
-            <div class="owl-carousel owl-theme carousel_4" id="zona-artikel">
-                <!--ZONA ARTIKEL-->
-                <?php $i = 300;
-                $j = 1; ?>
-                @foreach ($artikels as $item)
-                    <div class="item" data-aos="fade-right" data-aos-delay="{{ $i * $j }}">
-                        <div class="strip">
-                            <figure>
-                                <img src="{{ asset('img_thumbnail/' . $item->thumbnail) }}"
-                                    data-src="{{ asset('img_thumbnail/' . $item->thumbnail) }}" class="owl-lazy"
-                                    alt="" width="460" height="310">
-                                <a href="/post/{{ $item->jenisposting->slug }}/{{ $item->slug }}"
-                                    class="strip_info"></a>
-                            </figure>
-                        </div>
-                    </div>
-                    <?php $j++; ?>
-                @endforeach
-            </div>
-            <hr>
-            <div class="jadwal">
+            {{-- <hr> --}}
+
+            <section class="block pb-0">
+
+                <div class="main_title">
+                    {{-- <span><em></em></span> --}}
+                    {{-- <h3 class="sub-title" style="color: darkcyan">Artikel Terbaru</h3> --}}
+                    {{-- <p>Perkaya Wawasan</p> --}}
+                    <img src="	https://m.tabungamal.id/_next/image?url=https%3A%2…na-Erupsi-Gunung-Semeru1638764865.jpg"
+                        alt="">
+                    {{-- <br> --}}
+                    {{-- <a href="#" type="button" class="btn btn-sm btn_1">MORE</a> --}}
+                </div>
+                <div class="row">
+
+
+                </div>
+
+            </section>
+            {{-- <div class="jadwal">
                 <div class="row">
                     <div class="col-md-4" style="margin-bottom: 10px">
                         <select name="lokasi_id" class="form-control" id="lokasi">
-                            <option value="">Kabupaten / Kota</option>
+                            <option value="">Cari Kabupaten / Kota</option>
                             @foreach ($kab_kota as $item)
-                                <option value="{{$item->id}}">{{$item->lokasi}}</option>
+                                <option value="{{ $item->id }}">{{ $item->lokasi }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -261,8 +334,8 @@
             <div class="jadwal-sholat">
                 <div class="box" id="jadwal_sholat">
                     <div class="row" id="stand_jadwal">
-                        <div class="col-md-12" style="text-decoration-color: white">
-                            <p style="text-decoration-color: white">{{$tgl}}</p>
+                        <div class="col-md-12" style="text-decoration-color: white; margin-bottom: 10px">
+                            <p style="text-decoration-color: white">{{ $tgl }}</p>
                         </div>
                         <div class="col-md-2">
                             <a style="text-align: left; text-transform: uppercase">SUBUH :</a>
@@ -294,13 +367,10 @@
                             <a style="text-align: right" class="float-right">{{ $jadwal_sholat['imsak'] }}
                                 <b>AM</b></a>
                         </div>
-                    </div>   
+                    </div>
                 </div>
-            </div>
-
-            <br>
-            <br>
-            <div class="main_title">
+            </div> --}}
+            {{-- <div class="main_title">
                 <span data-aos="fade-right" data-aos-delay="150"><em></em></span>
                 <h2 data-aos="fade-right" data-aos-delay="300">BERITA</h2>
                 <p data-aos="fade-right" data-aos-delay="450">Kabar Terkini Nurul Falah</p>
@@ -336,10 +406,280 @@
                         <!-- /article -->
                     </div>
                 @endforeach
+            </div> --}}
+            <div class="blog-posts">
+                {{-- <div class="row"> --}}
+                    <section class="page-content pt-0">
+                        <div class="container">
+                            <div class="blog-single">
+                                <div class="row">
+                                    <div class="col-md-12" style="margin-top: 70px">
+                                        <h3 class="sub-title" style="color: darkcyan">ARTIKEL TERBARU</h3>
+                                    </div>
+                                </div>
+                                <div class="owl-carousel owl-theme carousel_4" id="zona-artikel">
+                                    <!--ZONA ARTIKEL-->
+                                    <?php $i = 300;
+                                    $j = 1; ?>
+                                    @foreach ($artikels as $item)
+                                        <div class="item" data-aos="fade-right" data-aos-delay="{{ $i * $j }}">
+                                            <div class="strip">
+                                                <figure>
+                                                    <img src="{{ asset('img_thumbnail/' . $item->thumbnail) }}"
+                                                        data-src="{{ asset('img_thumbnail/' . $item->thumbnail) }}"
+                                                        class="owl-lazy" alt="" width="460" height="310">
+                                                    <a href="/post/{{ $item->jenisposting->slug }}/{{ $item->slug }}"
+                                                        class="strip_info"></a>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <?php $j++; ?>
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                {{-- </div> --}}
+            </div>
+
+            <div class="blog-posts">
+                {{-- <div class="row"> --}}
+                    <section class="page-content pt-0">
+                        <div class="container">
+                            <div class="blog-single">
+                                <div class="row">
+                                    <div class="col-md-12" >
+                                        <h3 class="sub-title" style="color: darkcyan">BERITA TERKINI</h3>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="sidebar">
+                                            <div class="widget widget-search">
+                                                <form>
+                                                    <input type="text" name="search" placeholder="Search for articles / news">
+                                                    <button type="submit"><i class="la la-search"></i></button>
+                                                </form>
+                                            </div>
+                                            <!--widget-search end-->
+                                            <div class="widget widget-tags bg-white">
+                                                <h3 style="margin-bottom: 10px">JADWAL ADZAN : {{ $tgl }}</h3>
+                                                <select name="lokasi_id" class="form-control" id="lokasi"
+                                                    style="margin-bottom: 20px">
+                                                    <option value="">Cari Kabupaten / Kota</option>
+                                                    @foreach ($kab_kota as $item)
+                                                        <option value="{{ $item->id }}">{{ $item->lokasi }}
+                                                        </option>
+                                                    @endforeach
+                                                </select>
+                                                <ul class="tags-list">
+                                                    <div class="row">
+                                                        {{-- <div class="col-md-12" style="text-decoration-color: white; margin-bottom: 10px">
+                                                                <p style="text-decoration-color: white">{{ $tgl }}</p>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <a style="text-align: left; text-transform: uppercase">SUBUH :</a>
+                                                                <a style="text-align: right" class="float-right">{{ $jadwal_sholat['subuh'] }}
+                                                                    <b>AM</b></a>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <a style="text-align: left; text-transform: uppercase">dzuhur :</a>
+                                                                <a style="text-align: right" class="float-right">{{ $jadwal_sholat['dzuhur'] }}
+                                                                    <b>AM</b></a>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <a style="text-align: left; text-transform: uppercase">ashar :</a>
+                                                                <a style="text-align: right" class="float-right">{{ $jadwal_sholat['ashar'] }}
+                                                                    <b>PM</b></a>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <a style="text-align: left; text-transform: uppercase">maghrib :</a>
+                                                                <a style="text-align: right" class="float-right">{{ $jadwal_sholat['maghrib'] }}
+                                                                    <b>PM</b></a>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <a style="text-align: left; text-transform: uppercase">Isya :</a>
+                                                                <a style="text-align: right" class="float-right">{{ $jadwal_sholat['isya'] }}
+                                                                    <b>PM</b></a>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <a style="text-align: left; text-transform: uppercase">imsak :</a>
+                                                                <a style="text-align: right" class="float-right">{{ $jadwal_sholat['imsak'] }}
+                                                                    <b>AM</b></a>
+                                                            </div> --}}
+                                                        <div class="col-sm-12">
+                                                            <div class="tes">
+                                                                <a href="#" title="">Imsak</a>
+                                                                <a style="text-align: right"
+                                                                    class="float-right">{{ $jadwal_sholat['imsak'] }}
+                                                                    <b>AM</b></a>
+                                                            </div>
+
+                                                            <div class="tes">
+                                                                <a href="#" title="">Subuh</a>
+                                                                <a style="text-align: right"
+                                                                    class="float-right">{{ $jadwal_sholat['subuh'] }}
+                                                                    <b>AM</b></a>
+                                                            </div>
+
+                                                            <div class="tes">
+                                                                <a href="#" title="">Dzuhur</a>
+                                                                <a style="text-align: right"
+                                                                    class="float-right">{{ $jadwal_sholat['dzuhur'] }}
+                                                                    <b>AM</b></a>
+                                                            </div>
+
+                                                            <div class="tes">
+                                                                <a href="#" title="">Ashar</a>
+                                                                <a style="text-align: right"
+                                                                    class="float-right">{{ $jadwal_sholat['ashar'] }}
+                                                                    <b>AM</b></a>
+                                                            </div>
+
+                                                            <div class="tes">
+                                                                <a href="#" title="">Maghrib</a>
+                                                                <a style="text-align: right"
+                                                                    class="float-right">{{ $jadwal_sholat['maghrib'] }}
+                                                                    <b>AM</b></a>
+                                                            </div>
+
+                                                            <div class="tes">
+                                                                <a href="#" title="">Isya</a>
+                                                                <a style="text-align: right"
+                                                                    class="float-right">{{ $jadwal_sholat['isya'] }}
+                                                                    <b>AM</b></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <!--widget-tags end-->
+                                            <div class="widget popular-posts">
+                                                <h3 class="widget-title">Popular posts</h3>
+                                                <ul>
+                                                    <li>
+                                                        <div class="wid-post">
+                                                            <div class="wid-post-thumb">
+                                                                <img src="https://via.placeholder.com/473x373" alt="">
+                                                            </div>
+                                                            <div class="wid-post-info">
+                                                                <h3><a href="#" title="">How to choose a tile for the
+                                                                        bathroom</a></h3>
+                                                                <span>Jul 21, 2020</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="wid-post">
+                                                            <div class="wid-post-thumb">
+                                                                <img src="https://via.placeholder.com/473x373" alt="">
+                                                            </div>
+                                                            <div class="wid-post-info">
+                                                                <h3><a href="#" title="">How to properly install a
+                                                                        wardrobe in a room</a></h3>
+                                                                <span>Sep 15, 2018</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="wid-post">
+                                                            <div class="wid-post-thumb">
+                                                                <img src="https://via.placeholder.com/473x373" alt="">
+                                                            </div>
+                                                            <div class="wid-post-info">
+                                                                <h3><a href="#" title="">Kithen design ideas. Basic
+                                                                        principles</a></h3>
+                                                                <span>Dec 9, 2019</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!--popular-posts end-->
+                                            <div class="widget widget-search">
+                                                <h3 class="widget-title">Newsletter</h3>
+                                                <form>
+                                                    <input type="email" name="email" placeholder="Your e-mail">
+                                                    <button type="submit"><i class="la la-search"></i></button>
+                                                </form>
+                                                <span>Sign up to receive sprecial offers!</span>
+                                            </div>
+                                            <!--widget-search end-->
+                                        </div>
+                                        <!--sidebar end-->
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-12" style="margin-bottom: 20px">
+                                                <div class="blog-post">
+                                                    <div class="blog-thumbnail">
+                                                        <img src="https://via.placeholder.com/473x373" alt=""
+                                                            style="border-radius: 5px">
+                                                        <span class="category">Interior design</span>
+                                                    </div>
+                                                    <div class="blog-info">
+                                                        <span>Jul 21, 2020</span>
+                                                        <h2 class="blog-title"><a href="blog-single.html"
+                                                                title="">Types of home</a></h2>
+                                                        <p>Sed pellentesque velit a elit mattis, a volutpat neque
+                                                            feugiat</p>
+                                                        <a href="blog-single.html" title=""
+                                                            class="lnk-default2">Selengkapnya <i
+                                                                class="la la-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <!--blog-post end-->
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-12" style="margin-bottom: 20px">
+                                                <div class="blog-post">
+                                                    <div class="blog-thumbnail">
+                                                        <img src="https://via.placeholder.com/473x373" alt=""
+                                                            style="border-radius: 5px">
+                                                        <span class="category">Interior design</span>
+                                                    </div>
+                                                    <div class="blog-info">
+                                                        <span>Jul 21, 2020</span>
+                                                        <h2 class="blog-title"><a href="blog-single.html"
+                                                                title="">Types of home</a></h2>
+                                                        <p>Sed pellentesque velit a elit mattis, a volutpat neque
+                                                            feugiat</p>
+                                                        <a href="blog-single.html" title=""
+                                                            class="lnk-default2">Selengkapnya <i
+                                                                class="la la-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <!--blog-post end-->
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-12" style="margin-bottom: 20px">
+                                                <div class="blog-post">
+                                                    <div class="blog-thumbnail">
+                                                        <img src="https://via.placeholder.com/473x373" alt=""
+                                                            style="border-radius: 5px">
+                                                        <span class="category">Interior design</span>
+                                                    </div>
+                                                    <div class="blog-info">
+                                                        <span>Jul 21, 2020</span>
+                                                        <h2 class="blog-title"><a href="blog-single.html"
+                                                                title="">Types of home</a></h2>
+                                                        <p>Sed pellentesque velit a elit mattis, a volutpat neque
+                                                            feugiat</p>
+                                                        <a href="blog-single.html" title=""
+                                                            class="lnk-default2">Selengkapnya <i
+                                                                class="la la-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <!--blog-post end-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--blog-single end-->
+                        </div>
+                    </section>
+                    <!--page-content end-->
+                {{-- </div> --}}
             </div>
             <!-- /row -->
-            <hr id="artikel">
-            <div class="banner lazy" data-aos="fade-up" data-aos-delay="300" data-was-processed="true"
+            {{-- <div class="banner lazy" data-aos="fade-up" data-aos-delay="300" data-was-processed="true"
                 style="background-color: #3f5d6a;">
                 <div class="wrapper d-flex align-items-center opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.3)"
                     style="background-color: rgba(0, 0, 0, 0.3); ">
@@ -351,9 +691,151 @@
                     </div>
                 </div>
                 <!-- /wrapper -->
-            </div>
-            <hr>
-            <section class="products-slider">
+            </div> --}}
+
+            <section class="block pb-0">
+                <div class="container" style="margin-bottom: 100px">
+                    <div class="testimonial-section">
+                        <h3 class="sub-title">Channel Youtube</h3>
+                        <div class="testi-carousel">
+                            <div class="col-lg-4">
+                                <div class="testi-slide">
+                                    <iframe @disabled(true) style="width: 405px; height: 230px;"
+                                        src="https://www.youtube.com/embed/T7pnFWi3W7k" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <div class="testi-head">
+                                        <img src="{{ asset('TLWTI.png') }}" style="width: 70px" alt="">
+                                        <div class="user-info">
+                                            <h3>Bidang Tilawati</h3>
+                                            <span>Diklat & Pengembangan</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--testi-slide end-->
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="testi-slide">
+                                    <iframe style="width: 405px; height: 230px;"
+                                        src="https://www.youtube.com/embed/C794VdMqcGs" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <div class="testi-head">
+                                        <img src="{{ asset('TLWTI.png') }}" style="width: 70px" alt="">
+                                        <div class="user-info">
+                                            <h3>Bidang Tilawati</h3>
+                                            <span>Diklat & Pengembangan</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--testi-slide end-->
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="testi-slide">
+                                    <iframe style="width: 405px; height: 230px;"
+                                        src="https://www.youtube.com/embed/T7pnFWi3W7k" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <div class="testi-head">
+                                        <img src="{{ asset('TLWTI.png') }}" style="width: 70px" alt="">
+                                        <div class="user-info">
+                                            <h3>Bidang Tilawati</h3>
+                                            <span>Diklat & Pengembangan</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--testi-slide end-->
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="testi-slide">
+                                    <iframe style="width: 405px; height: 230px;"
+                                        src="https://www.youtube.com/embed/T7pnFWi3W7k" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                    <div class="testi-head">
+                                        <img src="{{ asset('TLWTI.png') }}" style="width: 70px" alt="">
+                                        <div class="user-info">
+                                            <h3>Bidang Tilawati</h3>
+                                            <span>Diklat & Pengembangan</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--testi-slide end-->
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <!--testimonial-section end-->
+                </div>
+                <div class="latest-projects-section" style="padding: 2%;">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="project-text" style="text-align: justify">
+                                <h3 class="sub-title">Produk Kami</h3>
+                                <p>Kami mempunyai beberapa product Cetak General maupun yang menjadi Penunjang pembelajaran
+                                    Al Quran diantaranya Majalah, Buku & Aplikasi. Berikut ini adalah product original kami
+                                    anda bisa melihat product kami selengkapnya dibawah ini</p><br><br>
+                                <a href="portfolio.html" title="" class="lnk-default2">Selengkapnya <i
+                                        class="la la-arrow-right"></i></a>
+                            </div>
+                            <!--project-text end-->
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="project-carousel">
+                                <div class="project-item">
+                                    <img src="https://via.placeholder.com/345x453" alt="">
+                                    <div class="project-info">
+                                        <h3><a href="portfolio-details.html" title="">Living room</a></h3>
+                                        <span>59 projects</span>
+                                    </div>
+                                    <!--project-info end-->
+                                </div>
+                                <!--project-item end-->
+                                <div class="project-item">
+                                    <img src="https://via.placeholder.com/345x453" alt="">
+                                    <div class="project-info">
+                                        <h3><a href="portfolio-details.html" title="">Kitchen</a></h3>
+                                        <span>75 projects</span>
+                                    </div>
+                                    <!--project-info end-->
+                                </div>
+                                <!--project-item end-->
+                                <div class="project-item">
+                                    <img src="https://via.placeholder.com/345x453" alt="">
+                                    <div class="project-info">
+                                        <h3><a href="portfolio-details.html" title="">Commercial</a></h3>
+                                        <span>49 projects</span>
+                                    </div>
+                                    <!--project-info end-->
+                                </div>
+                                <!--project-item end-->
+                                <div class="project-item">
+                                    <img src="https://via.placeholder.com/345x453" alt="">
+                                    <div class="project-info">
+                                        <h3><a href="portfolio-details.html" title="">Living room</a></h3>
+                                        <span>59 projects</span>
+                                    </div>
+                                    <!--project-info end-->
+                                </div>
+                                <!--project-item end-->
+                            </div>
+                            <!--project-carousel end-->
+                        </div>
+                    </div>
+                </div>
+                <!--latest-projects-section end-->
+            </section>
+            {{-- <section class="products-slider">
                 <!--product-container---------------------->
                 <div class="product-container">
                     <!--==slider-===============================----->
@@ -490,7 +972,7 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </section> --}}
 
             <div class="pattern_2" style="margin-top: 20px">
                 <div class="container margin_120_100">
@@ -589,7 +1071,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
     <script type="text/javascript">
         $("#lokasi").change(function() {
-            
+
             $.ajax({
                 url: "/index-jadwal-sholat/" + $(this).val(),
                 method: 'GET',
@@ -598,50 +1080,65 @@
                         $("#stand_jadwal").remove();
                         console.log(data.jadwal.jadwal);
                         $("#jadwal_sholat").append(
-                            '<div class="row ul" id="stand_jadwal">'
-                                +'<div class="col-md-12" style="text-decoration-color: white">'
-                                    +'<p style="text-decoration-color: white">'+data.jadwal.jadwal.tanggal+'</p>'
-                                +'</div>'
-                                +'<div class="col-md-2">'
-                                    +'<a style="text-align: left; text-transform: uppercase">SUBUH :</a>'
-                                    +'<a style="text-align: right" class="float-right">'+data.jadwal.jadwal.subuh+' '
-                                        +'<b>AM</b></a>'
-                                        +'</div>'
-                                        +'<div class="col-md-2">'
-                                            +'<a style="text-align: left; text-transform: uppercase">dzuhur :</a>'
-                                            +'<a style="text-align: right" class="float-right">'+data.jadwal.jadwal.dzuhur+' '
-                                                +'<b>AM</b></a>'
-                                                +'</div>'
-                                                +'<div class="col-md-2">'
-                                                    +'<a style="text-align: left; text-transform: uppercase">ashar :</a>'
-                                                    +'<a style="text-align: right" class="float-right">'+data.jadwal.jadwal.ashar+' '
-                                                        +'<b>PM</b></a>'
-                                                        +'</div>'
-                                                        +'<div class="col-md-2">'
-                                                            +'<a style="text-align: left; text-transform: uppercase">maghrib :</a>'
-                                                            +'<a style="text-align: right" class="float-right">'+data.jadwal.jadwal.maghrib+' '
-                                                                +'<b>PM</b></a>'
-                                                                +'</div>'
-                                                                +'<div class="col-md-2">'
-                                                                    +'<a style="text-align: left; text-transform: uppercase">Isya :</a>'
-                                                                    +'<a style="text-align: right" class="float-right">'+data.jadwal.jadwal.isya+' '
-                                                                        +'<b>PM</b></a>'
-                                                                        +'</div>'
-                                                                        +'<div class="col-md-2">'
-                                                                            +'<a style="text-align: left; text-transform: uppercase">imsak :</a>'
-                                                                            +'<a style="text-align: right" class="float-right">'+data.jadwal.jadwal.imsak+' '
-                                                                                +'<b>AM</b></a>'
-                                                                                +'</div>'
-                                                                                +'</div>'
+                            '<div class="row ul" id="stand_jadwal">' +
+                            '<div class="col-md-12" style="text-decoration-color: white; margin-bottom: 10px">' +
+                            '<p style="text-decoration-color: white">' + data.jadwal.jadwal
+                            .tanggal + '</p>' +
+                            '</div>' +
+                            '<div class="col-md-2">' +
+                            '<a style="text-align: left; text-transform: uppercase">SUBUH :</a>' +
+                            '<a style="text-align: right" class="float-right">' + data.jadwal.jadwal
+                            .subuh + ' ' +
+                            '<b>AM</b></a>' +
+                            '</div>' +
+                            '<div class="col-md-2">' +
+                            '<a style="text-align: left; text-transform: uppercase">dzuhur :</a>' +
+                            '<a style="text-align: right" class="float-right">' + data.jadwal.jadwal
+                            .dzuhur + ' ' +
+                            '<b>AM</b></a>' +
+                            '</div>' +
+                            '<div class="col-md-2">' +
+                            '<a style="text-align: left; text-transform: uppercase">ashar :</a>' +
+                            '<a style="text-align: right" class="float-right">' + data.jadwal.jadwal
+                            .ashar + ' ' +
+                            '<b>PM</b></a>' +
+                            '</div>' +
+                            '<div class="col-md-2">' +
+                            '<a style="text-align: left; text-transform: uppercase">maghrib :</a>' +
+                            '<a style="text-align: right" class="float-right">' + data.jadwal.jadwal
+                            .maghrib + ' ' +
+                            '<b>PM</b></a>' +
+                            '</div>' +
+                            '<div class="col-md-2">' +
+                            '<a style="text-align: left; text-transform: uppercase">Isya :</a>' +
+                            '<a style="text-align: right" class="float-right">' + data.jadwal.jadwal
+                            .isya + ' ' +
+                            '<b>PM</b></a>' +
+                            '</div>' +
+                            '<div class="col-md-2">' +
+                            '<a style="text-align: left; text-transform: uppercase">imsak :</a>' +
+                            '<a style="text-align: right" class="float-right">' + data.jadwal.jadwal
+                            .imsak + ' ' +
+                            '<b>AM</b></a>' +
+                            '</div>' +
+                            '</div>'
                         );
                         toastr.success(data.message);
-                        
+
                     } else {
-                        
+
                         toastr.success(data.message);
                     }
                 }
             });
         });
     </script>
+    {{-- <script src="{{asset('assets2/js/jquery.min.js')}}"></script> --}}
+    <script src="{{ asset('assets2/js/popper.js') }}"></script>
+    <script src="{{ asset('assets2/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets2/js/plugin/slick.min.js') }}"></script>
+    <script src="{{ asset('assets2/js/plugin/html5lightbox.js') }}"></script>
+    <script src="{{ asset('assets2/js/placeholdem.min.js') }}"></script>
+    <script src="{{ asset('assets2/js/wow.min.js') }}"></script>
+    <script src="{{ asset('assets2/js/script.js') }}"></script>
 @endsection

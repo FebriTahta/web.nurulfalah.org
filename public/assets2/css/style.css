@@ -2841,7 +2841,7 @@ select {
 
 
 
-/* HEADER SEARCH MENU */
+/* HEADER SEARCH MENU
 
 .header-search {
     position: fixed;
@@ -2886,7 +2886,7 @@ select {
 }
 .search-close-btn:hover {
 	color: #fff;
-}
+} */
 
 
 
